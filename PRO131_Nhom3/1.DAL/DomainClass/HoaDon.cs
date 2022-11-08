@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("HoaDon")]
-    [Index(nameof(Ma), Name = "UQ__HoaDon__3214CC9E90E06C9C", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__HoaDon__3214CC9EEDFE93B8", IsUnique = true)]
     public partial class HoaDon
     {
         public HoaDon()
@@ -32,25 +32,32 @@ namespace _1.DAL.DomainClass
         public Guid? IdUdtichDiem { get; set; }
         [StringLength(20)]
         public string Ma { get; set; }
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime? NgayTao { get; set; }
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime? NgayThanhToan { get; set; }
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime? NgayShip { get; set; }
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime? NgayNhan { get; set; }
-        public int? TrangThai { get; set; }
         [StringLength(50)]
         public string TenNguoiNhan { get; set; }
         [StringLength(100)]
         public string DiaChi { get; set; }
         [StringLength(10)]
         public string Sdt { get; set; }
-        [StringLength(30)]
-        public string GiamGia { get; set; }
+        [Column(TypeName = "decimal(18, 0)")]
+        public decimal? GiamGia { get; set; }
         [StringLength(50)]
         public string MoTa { get; set; }
+        [Column(TypeName = "decimal(18, 0)")]
+        public decimal? TongTien { get; set; }
+        [Column(TypeName = "decimal(18, 0)")]
+        public decimal? SoTienGiam { get; set; }
+        [Column(TypeName = "decimal(18, 0)")]
+        public decimal? TongTienSauKhiGiam { get; set; }
+        public int? TienKhachDua { get; set; }
+        public int? TrangThai { get; set; }
 
         [ForeignKey(nameof(IdHt))]
         [InverseProperty(nameof(HinhThucMh.HoaDons))]
