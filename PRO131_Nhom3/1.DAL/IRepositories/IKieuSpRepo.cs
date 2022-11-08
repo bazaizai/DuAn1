@@ -9,7 +9,8 @@ namespace _1.DAL.IRepositories
 {
     public interface IKieuSpRepo
     {
-        KieuSp Add();
+        KieuSp Add(KieuSp obj);
         KieuSp Update();
+        KieuSp GetID(Guid id);
     }
 }
