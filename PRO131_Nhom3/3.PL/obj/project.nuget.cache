@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "L6L0eOuSf/h5gPYOag/W5VIl8pyce7YKyYuAL5ai5hyLV0w27TeqP5g+lEdx9Cdjybj7W9TNAUOvEpGdOUbd3Q==",
+  "dgSpecHash": "U7MUXEvzWRY3QEknEFKIwV2EKj6D2lP9QvpWwgc5bEo6VeTG1KLZmETEatQJ/PSzW2mwcq3iR+tWlNQ5Jjtx5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
