@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("UDTichDiem")]
-    [Index(nameof(Ma), Name = "UQ__UDTichDi__3214CC9E613929EC", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__UDTichDi__3214CC9EAA1B7E03", IsUnique = true)]
     public partial class UdtichDiem
     {
         public UdtichDiem()
@@ -24,8 +24,8 @@ namespace _1.DAL.DomainClass
         [Column("LoaiHinhKM")]
         [StringLength(30)]
         public string LoaiHinhKm { get; set; }
-        [StringLength(30)]
-        public string MucUuDai { get; set; }
+        [Column(TypeName = "decimal(18, 0)")]
+        public decimal? MucUuDai { get; set; }
         public int? TrangThai { get; set; }
 
         [InverseProperty(nameof(HoaDon.IdUdtichDiemNavigation))]

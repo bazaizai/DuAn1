@@ -17,8 +17,6 @@ namespace _1.DAL.Repositories
         {
             try
             {
-                if (obj == null) return false;
-                obj.Id = Guid.NewGuid();
                 context.TichDiems.Add(obj);
                 context.SaveChanges();
                 return true;
@@ -34,7 +32,6 @@ namespace _1.DAL.Repositories
         {
             try
             {
-                if (obj == null) return false;
                 var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 context.Remove(tempobj);
                 context.SaveChanges();
@@ -63,7 +60,6 @@ namespace _1.DAL.Repositories
         {
             try
             {
-                if (obj == null) return false;
                 var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.SoDiem = obj.SoDiem;
                 tempobj.TrangThai = obj.TrangThai;
