@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    //chang
+
     public class ChiTietSaleRepos : IChiTietSaleRepos
     {
         private FpolyDBContext _dbContext;
