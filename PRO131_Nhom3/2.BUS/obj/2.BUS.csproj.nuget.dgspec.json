@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
         "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
+=======
+    "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "projectName": "1.DAL",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
+>>>>>>> Master
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,6 +93,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -87,6 +102,16 @@
         "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
         "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+=======
+    "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "projectName": "2.BUS",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+>>>>>>> Master
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +132,13 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
                 "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+=======
+              "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+>>>>>>> Master
               }
             }
           }

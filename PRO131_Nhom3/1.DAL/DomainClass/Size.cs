@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("Size")]
-    [Index(nameof(Ma), Name = "UQ__Size__3214CC9E4C6122CE", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__Size__3214CC9E4868D58D", IsUnique = true)]
     public partial class Size
     {
         public Size()
@@ -21,12 +21,13 @@ namespace _1.DAL.DomainClass
         public Guid Id { get; set; }
         [StringLength(20)]
         public string Ma { get; set; }
-        [Column("size")]
+        [Column("Size")]
         [StringLength(30)]
         public string Size1 { get; set; }
-        [Column("CM")]
-        [StringLength(30)]
-        public string Cm { get; set; }
+        [Column("CM", TypeName = "decimal(18, 0)")]
+        public decimal? Cm { get; set; }
+        [Column("INCH", TypeName = "decimal(18, 0)")]
+        public decimal? Inch { get; set; }
         public int? TrangThai { get; set; }
 
         [InverseProperty(nameof(ChiTietSp.IdSizeNavigation))]

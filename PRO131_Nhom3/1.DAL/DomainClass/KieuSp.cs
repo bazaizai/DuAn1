@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("KieuSP")]
-    [Index(nameof(Ma), Name = "UQ__KieuSP__3214CC9E7CC7F871", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__KieuSP__3214CC9E4723D16C", IsUnique = true)]
     public partial class KieuSp
     {
         public KieuSp()
@@ -19,7 +19,6 @@ namespace _1.DAL.DomainClass
 
         [Key]
         public Guid Id { get; set; }
-        public Guid? IdCha { get; set; }
         [StringLength(20)]
         public string Ma { get; set; }
         [StringLength(30)]

@@ -37,8 +37,8 @@ namespace _1.DAL.DomainClass
         public decimal? GiaNhap { get; set; }
         [Column(TypeName = "decimal(20, 0)")]
         public decimal? GiaBan { get; set; }
-        public int? TrangThai { get; set; }
         public int? TrangThaiKhuyenMai { get; set; }
+        public int? TrangThai { get; set; }
 
         [ForeignKey(nameof(IdChatLieu))]
         [InverseProperty(nameof(ChatLieu.ChiTietSps))]
