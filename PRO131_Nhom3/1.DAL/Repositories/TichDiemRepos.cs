@@ -15,25 +15,36 @@ namespace _1.DAL.Repositories
         private List<TichDiem> _lstTichDiem;
         public bool Add(TichDiem obj)
         {
-            if (obj == null) return false;
-            obj.Id = Guid.NewGuid();
-            context.TichDiems.Add(obj);
-            context.SaveChanges();
-            return true;
+            try
+            {
+                if (obj == null) return false;
+                obj.Id = Guid.NewGuid();
+                context.TichDiems.Add(obj);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
 
         public bool Delete(TichDiem obj)
         {
-            if (obj == null) return false;
-            var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
-            context.Remove(tempobj);
-            context.SaveChanges();
-            return true;
-        }
-
-        public List<TichDiem> GetAll()
-        {
-            return context.TichDiems.ToList();
+            try
+            {
+                if (obj == null) return false;
+                var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
+                context.Remove(tempobj);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
 
         public TichDiem GetById(Guid id)
@@ -50,13 +61,21 @@ namespace _1.DAL.Repositories
 
         public bool Update(TichDiem obj)
         {
-            if (obj == null) return false;
-            var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
-            tempobj.SoDiem = obj.SoDiem;
-            tempobj.TrangThai = obj.TrangThai;
-            context.Update(tempobj);
-            context.SaveChanges();
-            return true;
+            try
+            {
+                if (obj == null) return false;
+                var tempobj = context.TichDiems.FirstOrDefault(c => c.Id == obj.Id);
+                tempobj.SoDiem = obj.SoDiem;
+                tempobj.TrangThai = obj.TrangThai;
+                context.Update(tempobj);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
     }
 }

@@ -14,6 +14,5 @@ namespace _1.DAL.IRepositories
         bool Delete(TichDiem obj);
         TichDiem GetById(Guid id);
         List<TichDiem> GetTichDiems();
-        List<TichDiem> GetAll();
     }
 }
