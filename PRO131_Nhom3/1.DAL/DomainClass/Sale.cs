@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("Sale")]
-    [Index(nameof(Ma), Name = "UQ__Sale__3214CC9E5DB7AE68", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__Sale__3214CC9EE3A4F452", IsUnique = true)]
     public partial class Sale
     {
         public Sale()
@@ -30,8 +30,7 @@ namespace _1.DAL.DomainClass
         [Column("LoaiHinhKM")]
         [StringLength(30)]
         public string LoaiHinhKm { get; set; }
-        [StringLength(30)]
-        public string MucGiam { get; set; }
+        public int? MucGiam { get; set; }
         [StringLength(50)]
         public string MoTa { get; set; }
         public int? TrangThai { get; set; }

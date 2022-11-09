@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 namespace _1.DAL.DomainClass
 {
     [Table("KhachHang")]
-    [Index(nameof(Ma), Name = "UQ__KhachHan__3214CC9E42AC0AF3", IsUnique = true)]
-    [Index(nameof(Email), Name = "UQ__KhachHan__A9D10534BD4EDEBA", IsUnique = true)]
+    [Index(nameof(Ma), Name = "UQ__KhachHan__3214CC9EFA140D70", IsUnique = true)]
+    [Index(nameof(Email), Name = "UQ__KhachHan__A9D10534621E531E", IsUnique = true)]
     public partial class KhachHang
     {
         public KhachHang()
@@ -20,6 +20,8 @@ namespace _1.DAL.DomainClass
 
         [Key]
         public Guid Id { get; set; }
+        [Column("IDTichDiem")]
+        public Guid? IdtichDiem { get; set; }
         [StringLength(20)]
         public string Ma { get; set; }
         [StringLength(30)]
@@ -37,8 +39,10 @@ namespace _1.DAL.DomainClass
         [StringLength(30)]
         public string Email { get; set; }
         public int? TrangThai { get; set; }
-        public int? TichDiem { get; set; }
 
+        [ForeignKey(nameof(IdtichDiem))]
+        [InverseProperty(nameof(TichDiem.KhachHangs))]
+        public virtual TichDiem IdtichDiemNavigation { get; set; }
         [InverseProperty(nameof(HoaDon.IdKhNavigation))]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
     }
