@@ -6041,39 +6041,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\phuon\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\anhtr\\.nuget\\packages\\": {},
->>>>>>> DAnh
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
       "projectName": "1.DAL",
-      "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
-      "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
-      "projectName": "1.DAL",
-      "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
-      "packagesPath": "C:\\Users\\anhtr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
->>>>>>> DAnh
+      "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\phuon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\anhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> DAnh
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6131,8 +6115,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
