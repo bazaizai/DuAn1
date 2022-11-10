@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class SanPhamRepos
+    public class SanPhamRepos 
     {
         public FpolyDBContext _dbContext;
         public SanPhamRepos()

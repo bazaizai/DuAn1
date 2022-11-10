@@ -67,12 +67,11 @@ namespace _1.DAL.DomainClass
         [InverseProperty(nameof(HoaDonChiTiet.IdChiTietSpNavigation))]
         public virtual ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; }
 
-        public ChiTietSp(Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idGiaiDau, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThaiKhuyenMai, int? trangThai)
+        public ChiTietSp(Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThaiKhuyenMai, int? trangThai)
         {
             IdSp = idSp;
             IdMauSac = idMauSac;
             IdSize = idSize;
-            IdGiaiDau = idGiaiDau;
             IdTeam = idTeam;
             IdChatLieu = idChatLieu;
             BaoHanh = baoHanh;

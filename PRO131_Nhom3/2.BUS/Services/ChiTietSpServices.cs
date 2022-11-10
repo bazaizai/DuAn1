@@ -19,7 +19,7 @@ namespace _2.BUS.Services
         {
             _IChiTietSpRespos = new ChiTietSpRespos();
         }
-        public string Add(ChiTietSpViews Obj) => Obj != null && _IChiTietSpRespos.Add(new ChiTietSp(Obj.IdSp, Obj.IdMauSac, Obj.IdSize, Obj.IdGiaiDau, Obj.IdTeam, Obj.IdChatLieu, Obj.BaoHanh, Obj.MoTa, Obj.SoLuongTon, Obj.GiaNhap, Obj.GiaBan, Obj.TrangThaiKhuyenMai, Obj.TrangThai)) ? "Add Succsess" : "Add not success";
+        public string Add(ChiTietSpViews Obj) => Obj != null && _IChiTietSpRespos.Add(new ChiTietSp(Obj.IdSp, Obj.IdMauSac, Obj.IdSize, Obj.IdTeam, Obj.IdChatLieu, Obj.BaoHanh, Obj.MoTa, Obj.SoLuongTon, Obj.GiaNhap, Obj.GiaBan, Obj.TrangThaiKhuyenMai, Obj.TrangThai)) ? "Add Succsess" : "Add not success";
 
         public string Delete(ChiTietKieuSpViews Obj)=> Obj != null && _IChiTietSpRespos.Delete(_IChiTietSpRespos.GetAll().Find(x => x.Id == Obj.Id)) ? "Delete success" : "Delete not succsess";
 

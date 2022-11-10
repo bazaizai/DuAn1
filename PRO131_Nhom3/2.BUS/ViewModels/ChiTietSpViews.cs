@@ -16,7 +16,6 @@ namespace _2.BUS.ViewModels
         public Guid? IdSp { get; set; }
         public Guid? IdMauSac { get; set; }
         public Guid? IdSize { get; set; }
-        public Guid? IdGiaiDau { get; set; }
         public Guid? IdTeam { get; set; }
         public Guid? IdChatLieu { get; set; }
         public string BaoHanh { get; set; }
@@ -35,16 +34,16 @@ namespace _2.BUS.ViewModels
         public string Size { get; set; }
         //Bang ChatLieu
         public string TenChatLieu { get; set; }
-        //Bang GiaiDau
-        public string TenGiaiDau { get; set; }
+        //Bang Team
+        public string TenTeam { get; set; }
 
-        public ChiTietSpViews(Guid id, Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idGiaiDau, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThai, int? trangThaiKhuyenMai)
+
+        public ChiTietSpViews(Guid id, Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThai, int? trangThaiKhuyenMai)
         {
             Id = id;
             IdSp = idSp;
             IdMauSac = idMauSac;
             IdSize = idSize;
-            IdGiaiDau = idGiaiDau;
             IdTeam = idTeam;
             IdChatLieu = idChatLieu;
             BaoHanh = baoHanh;
@@ -56,12 +55,11 @@ namespace _2.BUS.ViewModels
             TrangThaiKhuyenMai = trangThaiKhuyenMai;
         }
 
-        public ChiTietSpViews(Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idGiaiDau, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThai, int? trangThaiKhuyenMai)
+        public ChiTietSpViews(Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThai, int? trangThaiKhuyenMai)
         {
             IdSp = idSp;
             IdMauSac = idMauSac;
             IdSize = idSize;
-            IdGiaiDau = idGiaiDau;
             IdTeam = idTeam;
             IdChatLieu = idChatLieu;
             BaoHanh = baoHanh;
