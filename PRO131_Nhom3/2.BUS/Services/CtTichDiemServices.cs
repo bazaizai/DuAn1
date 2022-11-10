@@ -52,7 +52,7 @@ namespace _2.BUS.Services
         {
             List<CtTinhDiemView> _lstCtTinhDiem = new List<CtTinhDiemView>();
             _lstCtTinhDiem = (
-                from a in _iCtTinhDiemRepos.GetUuDais()
+                from a in _iCtTinhDiemRepos.GetAll()
                 join b in _ihoaDonRepos.GetAll() on a.IdHoaDon equals b.Id
                 select new CtTinhDiemView()
                 {

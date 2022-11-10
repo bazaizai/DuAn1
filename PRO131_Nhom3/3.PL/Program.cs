@@ -1,4 +1,3 @@
-
 using _3.PL.Views;
 using System;
 using System.Collections.Generic;
@@ -19,11 +18,8 @@ namespace _3.PL
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new FrmChiTietSale());
-=======
-            Application.Run(new FrmMauSac());
->>>>>>> DAnh
+
         }
     }
 }

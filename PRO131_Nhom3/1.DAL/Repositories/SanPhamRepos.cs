@@ -9,11 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-<<<<<<< HEAD
-    public class SanPhamRepos 
-=======
     public class SanPhamRepos:ISanPhamRepos
->>>>>>> TAnh
     {
         public FpolyDBContext _dbContext;
         public SanPhamRepos()
@@ -56,9 +52,7 @@ namespace _1.DAL.Repositories
 
                 return false;
             }
-            
         }
-
         public bool Delete(SanPham obj)
         {
             if (obj == null) return false;

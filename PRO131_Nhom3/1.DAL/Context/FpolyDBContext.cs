@@ -47,30 +47,8 @@ namespace _1.DAL.Context
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                optionsBuilder.UseSqlServer("Data Source = MSI\\SQLEXPRESS01; Initial Catalog = PRO131; Persist Security Info = True; User ID = Chang1402; Password = 123456");
-                
-=======
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-BQAP540\\SQLEXPRESS;Initial Catalog=FINALASS_FPOLYSHOP_FA22_SOF205__SOF2041;Persist Security Info=True;User ID=Mi;Password=050905");
->>>>>>> TAnh
-
-=======
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-PB42K3H\\HKLADOI;Initial Catalog=PRO131;Persist Security Info=True;User ID=name;Password=123456");
->>>>>>> DAnh
-=======
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-VBVUUD9\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=hoangdhph25845;Password=1");
->>>>>>> Hoang
-
-=======
-                optionsBuilder.UseSqlServer("Data Source=NUGETRENKI\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=nugetrenki;Password=112233");
-                
->>>>>>> Kien
+                optionsBuilder.UseSqlServer("Data Source=BAZAIZAI\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=bazaizai;Password=Hieutre2k3");
             }
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
