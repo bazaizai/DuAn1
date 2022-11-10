@@ -18,22 +18,30 @@ namespace _2.BUS.Services
         {
             _iChucVuRepos = new ChucVuRepos();
         }
-        public bool Add(ChucVuView obj)
+        public string MaTS()
         {
-            var vcv = new ChucVu()
+            if (_iChucVuRepos.GetChucVus().Count == 0) return "CV1";
+            return "CV" + (_iChucVuRepos.GetChucVus().Max(x => Convert.ToInt32(x.Ma.Substring(2, x.Ma.Length - 2))) + 1);
+
+        }
+        public string Add(ChucVuView obj)
+        {
+            if (obj == null) return "Thêm thất bại";
+            ChucVu vcv = new ChucVu()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTS(),
                 Ten = obj.Ten,
                 TrangThai = obj.TrangThai
             };
             _iChucVuRepos.Add(vcv);
-            return true;
+            return "thêm thành công";
         }
 
-        public bool Delete(ChucVuView obj)
+        public string Delete(ChucVuView obj)
         {
-            var vcv = new ChucVu()
+            if (obj == null) return "xóa thất bại";
+            ChucVu vcv = new ChucVu()
             {
                 Id = obj.Id,
                 Ma = obj.Ma,
@@ -41,7 +49,7 @@ namespace _2.BUS.Services
                 TrangThai = obj.TrangThai
             };
             _iChucVuRepos.Delete(vcv);
-            return true;
+            return "xóa thành công";
         }
 
         public List<ChucVuView> GetChucVus()
@@ -59,9 +67,10 @@ namespace _2.BUS.Services
             return _lstChucVu;
         }
 
-        public bool Update(ChucVuView obj)
+        public string Update(ChucVuView obj)
         {
-            var vcv = new ChucVu()
+            if (obj == null) return "sửa thất bại";
+            ChucVu vcv = new ChucVu()
             {
                 Id = obj.Id,
                 Ma = obj.Ma,
@@ -69,7 +78,7 @@ namespace _2.BUS.Services
                 TrangThai = obj.TrangThai
             };
             _iChucVuRepos.Update(vcv);
-            return true;
+            return "sửa thành công";
         }
     }
 }

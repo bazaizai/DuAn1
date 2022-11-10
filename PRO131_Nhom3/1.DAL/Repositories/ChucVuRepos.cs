@@ -12,13 +12,14 @@ namespace _1.DAL.Repositories
 {
     public class ChucVuRepos : IChucVuRepos
     {
-        FpolyDBContext Context = new FpolyDBContext();
+        FpolyDBContext Context;
         public ChucVuRepos()
         {
- 
+            Context = new FpolyDBContext();
         }
         public bool Add(ChucVu obj)
         {
+            if (obj == null) return false;
             try
             {
                 Context.ChucVus.Add(obj);
@@ -33,6 +34,7 @@ namespace _1.DAL.Repositories
 
         public bool Delete(ChucVu obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.ChucVus.FirstOrDefault(x => x.Id == obj.Id);
@@ -59,6 +61,7 @@ namespace _1.DAL.Repositories
 
         public bool Update(ChucVu obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.ChucVus.FirstOrDefault(x => x.Id == obj.Id);

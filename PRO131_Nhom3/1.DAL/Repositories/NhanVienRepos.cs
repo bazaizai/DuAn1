@@ -11,14 +11,15 @@ namespace _1.DAL.Repositories
 {
     public class NhanVienRepos : INhanVienRepos
     {
-        FpolyDBContext Context = new FpolyDBContext();
+        FpolyDBContext Context;
         public NhanVienRepos()
         {
-
+            Context = new FpolyDBContext();
         }
 
         public bool Add(NhanVien obj)
         {
+            if (obj == null) return false;
             try
             {
                 Context.NhanViens.Add(obj);
@@ -33,6 +34,7 @@ namespace _1.DAL.Repositories
 
         public bool Delete(NhanVien obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.NhanViens.FirstOrDefault(x => x.Id == obj.Id);
@@ -59,6 +61,7 @@ namespace _1.DAL.Repositories
 
         public bool Update(NhanVien obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.NhanViens.FirstOrDefault(x => x.Id == obj.Id);
