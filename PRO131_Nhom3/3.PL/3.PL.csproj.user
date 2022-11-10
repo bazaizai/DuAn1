@@ -26,13 +26,20 @@
     <Compile Update="CustomControlls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Views\FrmChiTietSale.cs">
+=======
+    <Compile Update="Views\FrmChatLieu.cs">
+>>>>>>> TAnh
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmGiaiDau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmHinhThucMh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmKhachHang.cs">
@@ -47,6 +54,9 @@
     <Compile Update="Views\FrmMauSac.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\FrmPtthanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\frmQLBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +64,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmSize.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmTeam.cs">

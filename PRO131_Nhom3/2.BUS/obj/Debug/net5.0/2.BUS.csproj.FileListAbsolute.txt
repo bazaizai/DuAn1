@@ -16,6 +16,7 @@ C:\Users\Asus\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\ref\2.BUS.dll
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.deps.json
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.dll
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.pdb
@@ -82,3 +83,20 @@ C:\Users\taikh\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\refint\2.BUS.dl
 C:\Users\taikh\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.pdb
 C:\Users\taikh\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\ref\2.BUS.dll
 >>>>>>> Kien
+=======
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.deps.json
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.dll
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\2.BUS.pdb
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\1.DAL.dll
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\bin\Debug\net5.0\1.DAL.pdb
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.csproj.AssemblyReference.cache
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.AssemblyInfoInputs.cache
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.AssemblyInfo.cs
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.csproj.CoreCompileInputs.cache
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.csproj.CopyComplete
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.dll
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\refint\2.BUS.dll
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\2.BUS.pdb
+C:\Users\chono\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\obj\Debug\net5.0\ref\2.BUS.dll
+>>>>>>> TAnh

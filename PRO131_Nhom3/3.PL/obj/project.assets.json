@@ -5770,15 +5770,20 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
 =======
     "C:\\Users\\taikh\\.nuget\\packages\\": {},
 >>>>>>> Kien
+=======
+    "C:\\Users\\chono\\.nuget\\packages\\": {},
+>>>>>>> TAnh
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
       "projectName": "3.PL",
@@ -5792,16 +5797,27 @@
       "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
 >>>>>>> Kien
+=======
+      "projectUniqueName": "C:\\Users\\chono\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+      "projectName": "3.PL",
+      "projectPath": "C:\\Users\\chono\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+      "packagesPath": "C:\\Users\\chono\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chono\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+>>>>>>> TAnh
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> Kien
+=======
+        "C:\\Users\\chono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> TAnh
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5817,12 +5833,17 @@
           "targetAlias": "net5.0-windows",
           "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
               "projectPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
 =======
             "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
               "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
 >>>>>>> Kien
+=======
+            "C:\\Users\\chono\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+              "projectPath": "C:\\Users\\chono\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
+>>>>>>> TAnh
             }
           }
         }

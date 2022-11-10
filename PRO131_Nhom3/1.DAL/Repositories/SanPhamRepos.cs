@@ -1,5 +1,6 @@
 ﻿using _1.DAL.Context;
 using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
+<<<<<<< HEAD
     public class SanPhamRepos 
+=======
+    public class SanPhamRepos:ISanPhamRepos
+>>>>>>> TAnh
     {
         public FpolyDBContext _dbContext;
         public SanPhamRepos()
@@ -75,6 +80,13 @@ namespace _1.DAL.Repositories
         public List<SanPham> GetSanPhams()
         {
             return _dbContext.SanPhams.ToList();
+        }
+
+        public SanPham GetById(Guid id)
+        {
+            if (id == Guid.Empty) return null;
+            return _dbContext.SanPhams.FirstOrDefault(c => c.Id == id);
+
         }
     }
 }

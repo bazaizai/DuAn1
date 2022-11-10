@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "C:\\Users\\phuon\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\phuon\\.nuget\\packages",
 =======
@@ -18,6 +19,10 @@
       "C:\\Users\\taikh\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\taikh\\.nuget\\packages",
 >>>>>>> Kien
+=======
+      "C:\\Users\\chono\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\chono\\.nuget\\packages",
+>>>>>>> TAnh
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }

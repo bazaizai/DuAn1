@@ -6,19 +6,27 @@
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ADMIN\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\taikh\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
 >>>>>>> Kien
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\chono\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+>>>>>>> TAnh
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.2.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SourceRoot Include="C:\Users\ADMIN\.nuget\packages\" />
 =======
     <SourceRoot Include="C:\Users\taikh\.nuget\packages\" />
 >>>>>>> Kien
+=======
+    <SourceRoot Include="C:\Users\chono\.nuget\packages\" />
+>>>>>>> TAnh
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
@@ -26,11 +34,16 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\ADMIN\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.15</PkgMicrosoft_EntityFrameworkCore_Tools>
 =======
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\taikh\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\taikh\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.15</PkgMicrosoft_EntityFrameworkCore_Tools>
 >>>>>>> Kien
+=======
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\chono\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\chono\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.15</PkgMicrosoft_EntityFrameworkCore_Tools>
+>>>>>>> TAnh
   </PropertyGroup>
 </Project>

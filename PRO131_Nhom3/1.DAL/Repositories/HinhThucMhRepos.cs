@@ -1,5 +1,6 @@
 ﻿using _1.DAL.Context;
 using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class HinhThucMhRepos
+    public class HinhThucMhRepos:IHinhThucMhRepos
     {
         public FpolyDBContext _dbContext;
         public HinhThucMhRepos()
@@ -76,6 +77,13 @@ namespace _1.DAL.Repositories
         public List<HinhThucMh> GetHinhThucMhs()
         {
             return _dbContext.HinhThucMhs.ToList();
+        }
+
+        public HinhThucMh GetById(Guid id)
+        {
+            if (id == Guid.Empty) return null;
+            return _dbContext.HinhThucMhs.FirstOrDefault(c => c.Id == id);
+
         }
     }
 }
