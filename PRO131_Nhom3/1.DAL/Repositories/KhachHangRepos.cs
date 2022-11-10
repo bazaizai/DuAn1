@@ -13,7 +13,11 @@ namespace _1.DAL.Repositories
     {
         private FpolyDBContext context;
         private List<KhachHang> _lstKhachHang;
-
+        public KhachHangRepos()
+        {
+            context = new FpolyDBContext();
+            _lstKhachHang = new List<KhachHang>();
+        }
         public bool Add(KhachHang obj)
         {
             try
@@ -51,8 +55,9 @@ namespace _1.DAL.Repositories
 
         public List<KhachHang> GetKhachHangs()
         {
-            _lstKhachHang = context.KhachHangs.ToList();
-            return _lstKhachHang;
+                _lstKhachHang = context.KhachHangs.ToList();
+                return _lstKhachHang;
+            
         }
 
         public bool Update(KhachHang obj)
