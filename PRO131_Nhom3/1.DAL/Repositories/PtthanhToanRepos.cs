@@ -1,5 +1,6 @@
 ﻿using _1.DAL.Context;
 using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class PtthanhToanRepos
+    public class PtthanhToanRepos:IPtthanhToanRepos
     {
         public FpolyDBContext _dbContext;
         public PtthanhToanRepos()
@@ -75,6 +76,13 @@ namespace _1.DAL.Repositories
         public List<PtthanhToan> GetPtthanhToans()
         {
             return _dbContext.PtthanhToans.ToList();
+        }
+
+        public PtthanhToan GetById(Guid id)
+        {
+            if (id == Guid.Empty) return null;
+            return _dbContext.PtthanhToans.FirstOrDefault(c => c.Id == id);
+
         }
     }
 }
