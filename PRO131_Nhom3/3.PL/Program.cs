@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using _3.PL.Views;
 =======
 using _3.PL.VIews;
@@ -7,6 +8,9 @@ using _3.PL.VIews;
 =======
 using _3.PL.Views;
 >>>>>>> Hoang
+=======
+using _3.PL.Views;
+>>>>>>> Kien
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +32,7 @@ namespace _3.PL
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Application.Run(new FrmSale());
 =======
             Application.Run(new FrmChucVu());
@@ -36,6 +41,9 @@ namespace _3.PL
             Application.Run(new FrmMain());
 
 >>>>>>> Hoang
+=======
+            Application.Run(new FrmKhachHang());
+>>>>>>> Kien
         }
     }
 }

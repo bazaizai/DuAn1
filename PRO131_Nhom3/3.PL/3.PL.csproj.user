@@ -3,6 +3,7 @@
   <ItemGroup>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Update="Views\FrmGiaiDau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -49,6 +50,18 @@
     </Compile>
     <Compile Update="Views\frmQLChiTietSp.cs">
 >>>>>>> Hoang
+=======
+    <Compile Update="Views\FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmLichSuTichDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmTichDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmUuDaiTichDiem.cs">
+>>>>>>> Kien
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

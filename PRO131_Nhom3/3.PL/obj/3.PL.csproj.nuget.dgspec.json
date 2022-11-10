@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
 =======
     "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
@@ -52,11 +53,25 @@
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
 >>>>>>> Hoang
+=======
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "projectName": "1.DAL",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
+>>>>>>> Kien
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,6 +84,9 @@
 =======
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> Hoang
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Kien
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -116,8 +134,12 @@
             "net47",
             "net471",
             "net472",
+<<<<<<< HEAD
             "net48",
             "net481"
+=======
+            "net48"
+>>>>>>> Kien
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -126,6 +148,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
@@ -138,12 +161,30 @@
         "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
         "packagesPath": "C:\\Users\\anhtr\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "projectName": "2.BUS",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+>>>>>>> Kien
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\anhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Kien
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -158,8 +199,13 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
                 "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+=======
+              "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+                "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+>>>>>>> Kien
               }
             }
           }
@@ -179,8 +225,12 @@
             "net47",
             "net471",
             "net472",
+<<<<<<< HEAD
             "net48",
             "net481"
+=======
+            "net48"
+>>>>>>> Kien
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -189,6 +239,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
@@ -201,17 +252,36 @@
         "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
         "packagesPath": "C:\\Users\\anhtr\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "projectName": "3.PL",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+>>>>>>> Kien
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\anhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> DAnh
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Kien
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           "net5.0"
@@ -354,6 +424,9 @@
         "originalTargetFrameworks": [
 >>>>>>> Chang
           "net5.0-windows"
+=======
+          "net5.0-windows7.0"
+>>>>>>> Kien
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -364,12 +437,17 @@
             "targetAlias": "net5.0-windows",
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
                 "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
 =======
               "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
                 "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
 >>>>>>> DAnh
+=======
+              "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+                "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
+>>>>>>> Kien
               }
             }
           }
@@ -395,8 +473,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -410,6 +487,7 @@
           },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
@@ -417,6 +495,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> Hoang
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+>>>>>>> Kien
         }
       }
     }

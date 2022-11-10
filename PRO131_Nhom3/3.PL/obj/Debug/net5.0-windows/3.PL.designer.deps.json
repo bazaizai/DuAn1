@@ -7,6 +7,9 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kien
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Data.SqlClient/2.0.1": {
         "dependencies": {
@@ -1337,6 +1340,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {
             "assemblyVersion": "4.0.12.0",
             "fileVersion": "4.6.24705.1"
+<<<<<<< HEAD
 =======
       "FontAwesome.Sharp/6.1.1": {
         "runtime": {
@@ -1344,6 +1348,8 @@
             "assemblyVersion": "6.1.1.0",
             "fileVersion": "6.1.1.0"
 >>>>>>> Hoang
+=======
+>>>>>>> Kien
           }
         }
       }
@@ -1351,6 +1357,9 @@
   },
   "libraries": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kien
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -2008,6 +2017,7 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 =======
     "FontAwesome.Sharp/6.1.1": {
       "type": "package",
@@ -2016,6 +2026,8 @@
       "path": "fontawesome.sharp/6.1.1",
       "hashPath": "fontawesome.sharp.6.1.1.nupkg.sha512"
 >>>>>>> Hoang
+=======
+>>>>>>> Kien
     }
   }
 }

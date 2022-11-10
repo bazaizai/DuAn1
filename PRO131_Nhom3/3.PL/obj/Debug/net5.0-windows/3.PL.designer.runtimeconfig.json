@@ -8,6 +8,7 @@
     "additionalProbingPaths": [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "C:\\Users\\phuon\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\phuon\\.nuget\\packages",
 =======
@@ -18,6 +19,10 @@
       "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ADMIN\\.nuget\\packages",
 >>>>>>> Hoang
+=======
+      "C:\\Users\\taikh\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\taikh\\.nuget\\packages",
+>>>>>>> Kien
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
