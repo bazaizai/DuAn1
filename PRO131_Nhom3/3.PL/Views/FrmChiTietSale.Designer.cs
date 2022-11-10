@@ -58,6 +58,7 @@
             this.bt_xoaform.TabIndex = 42;
             this.bt_xoaform.Text = "Xóa form";
             this.bt_xoaform.UseVisualStyleBackColor = true;
+            this.bt_xoaform.Click += new System.EventHandler(this.bt_xoaform_Click);
             // 
             // rdb_khd
             // 
@@ -122,6 +123,7 @@
             this.bt_xoa.TabIndex = 36;
             this.bt_xoa.Text = "xóa";
             this.bt_xoa.UseVisualStyleBackColor = true;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // tb_them
             // 
@@ -132,6 +134,7 @@
             this.tb_them.TabIndex = 35;
             this.tb_them.Text = "Thêm";
             this.tb_them.UseVisualStyleBackColor = true;
+            this.tb_them.Click += new System.EventHandler(this.tb_them_Click);
             // 
             // bt_update
             // 
@@ -142,6 +145,7 @@
             this.bt_update.TabIndex = 34;
             this.bt_update.Text = "Cập nhật";
             this.bt_update.UseVisualStyleBackColor = true;
+            this.bt_update.Click += new System.EventHandler(this.bt_update_Click);
             // 
             // label3
             // 
