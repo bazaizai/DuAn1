@@ -15,8 +15,10 @@ namespace _2.BUS.ViewModels
         public string Ma { get; set; }
         
         public string Size1 { get; set; }
-     
-        public string Cm { get; set; }
+        public decimal? Cm { get; set; }
+        
+        public decimal? Inch { get; set; }
+       
         public int? TrangThai { get; set; }
     }
 }

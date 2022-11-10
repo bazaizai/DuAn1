@@ -47,8 +47,11 @@ namespace _1.DAL.Context
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=BAZAIZAI\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=bazaizai;Password=Hieutre2k3");
+
+                optionsBuilder.UseSqlServer("Data Source=BAZAIZAI\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=Bazaizai;Password=Hieutre2k3");
+
             }
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -85,17 +88,17 @@ namespace _1.DAL.Context
                 entity.HasOne(d => d.IdChaNavigation)
                     .WithMany(p => p.InverseIdChaNavigation)
                     .HasForeignKey(d => d.IdCha)
-                    .HasConstraintName("FK__ChiTietKi__IdCha__55F4C372");
+                    .HasConstraintName("FK__ChiTietKi__IdCha__634EBE90");
 
                 entity.HasOne(d => d.IdChiTietSpNavigation)
                     .WithMany(p => p.ChiTietKieuSps)
                     .HasForeignKey(d => d.IdChiTietSp)
-                    .HasConstraintName("FK__ChiTietKi__IdChi__55009F39");
+                    .HasConstraintName("FK__ChiTietKi__IdChi__625A9A57");
 
                 entity.HasOne(d => d.IdKieuSpNavigation)
                     .WithMany(p => p.ChiTietKieuSps)
                     .HasForeignKey(d => d.IdKieuSp)
-                    .HasConstraintName("FK__ChiTietKi__IdKie__540C7B00");
+                    .HasConstraintName("FK__ChiTietKi__IdKie__6166761E");
             });
 
             modelBuilder.Entity<ChiTietSale>(entity =>
@@ -107,12 +110,12 @@ namespace _1.DAL.Context
                 entity.HasOne(d => d.IdChiTietSpNavigation)
                     .WithMany(p => p.ChiTietSales)
                     .HasForeignKey(d => d.IdChiTietSp)
-                    .HasConstraintName("FK__ChiTietSa__IdChi__531856C7");
+                    .HasConstraintName("FK__ChiTietSa__IdChi__607251E5");
 
                 entity.HasOne(d => d.IdSaleNavigation)
                     .WithMany(p => p.ChiTietSales)
                     .HasForeignKey(d => d.IdSale)
-                    .HasConstraintName("FK__ChiTietSa__IdSal__5224328E");
+                    .HasConstraintName("FK__ChiTietSa__IdSal__5F7E2DAC");
             });
 
             modelBuilder.Entity<ChiTietSp>(entity =>
@@ -130,32 +133,32 @@ namespace _1.DAL.Context
                 entity.HasOne(d => d.IdChatLieuNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdChatLieu)
-                    .HasConstraintName("FK__ChiTietSP__IdCha__503BEA1C");
+                    .HasConstraintName("FK__ChiTietSP__IdCha__5D95E53A");
 
                 entity.HasOne(d => d.IdGiaiDauNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdGiaiDau)
-                    .HasConstraintName("FK__ChiTietSP__IdGia__4E53A1AA");
+                    .HasConstraintName("FK__ChiTietSP__IdGia__5BAD9CC8");
 
                 entity.HasOne(d => d.IdMauSacNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdMauSac)
-                    .HasConstraintName("FK__ChiTietSP__IdMau__4C6B5938");
+                    .HasConstraintName("FK__ChiTietSP__IdMau__59C55456");
 
                 entity.HasOne(d => d.IdSizeNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdSize)
-                    .HasConstraintName("FK__ChiTietSP__IdSiz__4D5F7D71");
+                    .HasConstraintName("FK__ChiTietSP__IdSiz__5AB9788F");
 
                 entity.HasOne(d => d.IdSpNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdSp)
-                    .HasConstraintName("FK__ChiTietSP__IdSP__4B7734FF");
+                    .HasConstraintName("FK__ChiTietSP__IdSP__58D1301D");
 
                 entity.HasOne(d => d.IdTeamNavigation)
                     .WithMany(p => p.ChiTietSps)
                     .HasForeignKey(d => d.IdTeam)
-                    .HasConstraintName("FK__ChiTietSP__IdTea__4F47C5E3");
+                    .HasConstraintName("FK__ChiTietSP__IdTea__5CA1C101");
             });
 
             modelBuilder.Entity<ChucVu>(entity =>
@@ -201,36 +204,46 @@ namespace _1.DAL.Context
             {
                 entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
+                entity.Property(e => e.GiamGia).HasDefaultValueSql("((0))");
+
                 entity.Property(e => e.Ma).IsUnicode(false);
 
                 entity.Property(e => e.Sdt).IsUnicode(false);
+
+                entity.Property(e => e.SoTienGiam).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.TienKhachDua).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.TongTien).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.TongTienSauKhiGiam).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.TrangThai).HasDefaultValueSql("((0))");
 
                 entity.HasOne(d => d.IdHtNavigation)
                     .WithMany(p => p.HoaDons)
                     .HasForeignKey(d => d.IdHt)
-                    .HasConstraintName("FK__HoaDon__IdHT__4A8310C6");
+                    .HasConstraintName("FK__HoaDon__IdHT__57DD0BE4");
 
                 entity.HasOne(d => d.IdKhNavigation)
                     .WithMany(p => p.HoaDons)
                     .HasForeignKey(d => d.IdKh)
-                    .HasConstraintName("FK__HoaDon__IdKH__47A6A41B");
+                    .HasConstraintName("FK__HoaDon__IdKH__55009F39");
 
                 entity.HasOne(d => d.IdNvNavigation)
                     .WithMany(p => p.HoaDons)
                     .HasForeignKey(d => d.IdNv)
-                    .HasConstraintName("FK__HoaDon__IdNV__489AC854");
+                    .HasConstraintName("FK__HoaDon__IdNV__55F4C372");
 
                 entity.HasOne(d => d.IdPtttNavigation)
                     .WithMany(p => p.HoaDons)
                     .HasForeignKey(d => d.IdPttt)
-                    .HasConstraintName("FK__HoaDon__IdPTTT__498EEC8D");
+                    .HasConstraintName("FK__HoaDon__IdPTTT__56E8E7AB");
 
                 entity.HasOne(d => d.IdUdtichDiemNavigation)
                     .WithMany(p => p.HoaDons)
                     .HasForeignKey(d => d.IdUdtichDiem)
-                    .HasConstraintName("FK__HoaDon__IdUDTich__56E8E7AB");
+                    .HasConstraintName("FK__HoaDon__IdUDTich__6442E2C9");
             });
 
             modelBuilder.Entity<HoaDonChiTiet>(entity =>
@@ -262,16 +275,17 @@ namespace _1.DAL.Context
 
                 entity.Property(e => e.Sdt).IsUnicode(false);
 
-                entity.Property(e => e.TichDiem).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.TrangThai).HasDefaultValueSql("((0))");
+
+                entity.HasOne(d => d.IdtichDiemNavigation)
+                    .WithMany(p => p.KhachHangs)
+                    .HasForeignKey(d => d.IdtichDiem)
+                    .HasConstraintName("FK__KhachHang__IDTic__65370702");
             });
 
             modelBuilder.Entity<KieuSp>(entity =>
             {
                 entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
-
-                entity.Property(e => e.IdCha).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Ma).IsUnicode(false);
 
@@ -325,7 +339,7 @@ namespace _1.DAL.Context
                 entity.HasOne(d => d.IdCvNavigation)
                     .WithMany(p => p.NhanViens)
                     .HasForeignKey(d => d.IdCv)
-                    .HasConstraintName("FK__NhanVien__IdCV__46B27FE2");
+                    .HasConstraintName("FK__NhanVien__IdCV__540C7B00");
             });
 
             modelBuilder.Entity<PtthanhToan>(entity =>
@@ -343,6 +357,8 @@ namespace _1.DAL.Context
 
                 entity.Property(e => e.Ma).IsUnicode(false);
 
+                entity.Property(e => e.MucGiam).HasDefaultValueSql("((0))");
+
                 entity.Property(e => e.TrangThai).HasDefaultValueSql("((0))");
             });
 
@@ -359,7 +375,9 @@ namespace _1.DAL.Context
             {
                 entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
-                entity.Property(e => e.Cm).IsUnicode(false);
+                entity.Property(e => e.Cm).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.Inch).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.Ma).IsUnicode(false);
 
@@ -379,7 +397,7 @@ namespace _1.DAL.Context
                 entity.HasOne(d => d.IdGdNavigation)
                     .WithMany(p => p.Teams)
                     .HasForeignKey(d => d.IdGd)
-                    .HasConstraintName("FK__Team__IdGD__51300E55");
+                    .HasConstraintName("FK__Team__IdGD__5E8A0973");
             });
 
             modelBuilder.Entity<TichDiem>(entity =>
@@ -394,6 +412,8 @@ namespace _1.DAL.Context
                 entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Ma).IsUnicode(false);
+
+                entity.Property(e => e.MucUuDai).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.TrangThai).HasDefaultValueSql("((0))");
             });
