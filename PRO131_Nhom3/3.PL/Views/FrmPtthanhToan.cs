@@ -46,31 +46,31 @@ namespace _3.PL.Views
             }
             foreach (var item in lstKhachHang)
             {
-                dtg_Show.Rows.Add(item.Id, item.Ma, item.Ten, item.TrangThai /*item.nhanVien.TrangThai == 0 ? "Không hoạt động" : "Hoạt động"*/);
+                dtg_Show.Rows.Add(item.Id, item.Ma, item.Ten, item.TrangThai==0?"Hoạt động":"Không hoạt động" );
 
             }
         }
 
-        private string MaTS()
-        {
-            string[] hoten;
-            hoten = tb_Ten.Text.Split(' ');
-            string tenVT = "";
-            for (int i = 0; i < hoten.Length - 1; i++)
-            {
-                tenVT += hoten[i][0];
-            }
-            tenVT = hoten[hoten.Length - 1] + tenVT;
-            int stt = _ISanPhamServices.GetPtthanhToans().Where(x => Regex.Match(x.Ma, @"^[^0-9]*").Value == tenVT).ToList().Count + 1;
-            return tenVT + stt.ToString();
-        }
+        //private string MaTS()
+        //{
+        //    string[] hoten;
+        //    hoten = tb_Ten.Text.Split(' ');
+        //    string tenVT = "";
+        //    for (int i = 0; i < hoten.Length - 1; i++)
+        //    {
+        //        tenVT += hoten[i][0];
+        //    }
+        //    tenVT = hoten[hoten.Length - 1] + tenVT;
+        //    int stt = _ISanPhamServices.GetPtthanhToans().Where(x => Regex.Match(x.Ma, @"^[^0-9]*").Value == tenVT).ToList().Count + 1;
+        //    return tenVT + stt.ToString();
+        //}
 
         public void resetForm()
         {
             _SanPham = null;
 
-            radioButton1 = null;
-            radioButton2 = null;
+            radioButton1.Checked=false;
+            radioButton2.Checked=false;
             foreach (TextBox item in groupBox2.Controls.OfType<TextBox>())
             {
                 item.Clear();
@@ -88,8 +88,8 @@ namespace _3.PL.Views
                 _SanPham = _ISanPhamServices.GetPtthanhToans().FirstOrDefault(x => x.Id == Guid.Parse(r.Cells[0].Value.ToString() ?? "Unknown message id"));
                 tb_Ma.Text = r.Cells[1].Value.ToString();
                 tb_Ten.Text = r.Cells[2].Value.ToString();
-
-
+                radioButton1.Checked = r.Cells[3].Value.ToString() == "Hoạt động";
+                radioButton2.Checked = r.Cells[3].Value.ToString() == "Không hoạt động";
             }
         }
 
@@ -99,7 +99,10 @@ namespace _3.PL.Views
             {
                 MessageBox.Show("Hãy nhập Ten");
             }
-
+            else if(radioButton1.Checked==false|| radioButton2.Checked == false)
+            {
+                MessageBox.Show("Hãy chọn trạng thái");
+            }
             else
             {
 
@@ -108,7 +111,8 @@ namespace _3.PL.Views
                 {
                     PtthanhToanViews a = new PtthanhToanViews()
                     {
-                        Ma = MaTS(),
+                        //Ma = MaTS(),
+                        Ma=tb_Ma.Text,
                         Ten = tb_Ten.Text,
                         
                     };
@@ -137,7 +141,8 @@ namespace _3.PL.Views
                     DialogResult dlg = MessageBox.Show("Bạn có muốn sửa ", "Chú ý", MessageBoxButtons.YesNo);
                     if (dlg == DialogResult.Yes)
                     {
-                        _SanPham.Ma = MaTS();
+                        
+                        _SanPham.Ma = tb_Ma.Text;///
                         _SanPham.Ten = tb_Ten.Text;
 
                         _ISanPhamServices.Update(_SanPham);
@@ -152,11 +157,11 @@ namespace _3.PL.Views
         {
             if (_SanPham == null)
             {
-                MessageBox.Show("Bạn chưa chọn Khách hàng");
+                MessageBox.Show("Bạn chưa chọn ");
             }
             else
             {
-                DialogResult dlg = MessageBox.Show("Bạn có muốn xóa khách hàng", "Chú ý", MessageBoxButtons.YesNo);
+                DialogResult dlg = MessageBox.Show("Bạn có muốn xóa ", "Chú ý", MessageBoxButtons.YesNo);
                 if (dlg == DialogResult.Yes)
                 {
                     _ISanPhamServices.Delete(_SanPham);

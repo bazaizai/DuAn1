@@ -29,7 +29,7 @@ namespace _2.BUS.Services
             ChatLieu Sp = new ChatLieu()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTT(),
                 Ten = obj.Ten,
                 TrangThai = obj.TrangThai,
             };
@@ -71,6 +71,14 @@ namespace _2.BUS.Services
             x.TrangThai = obj.TrangThai;
             if (_IChatLieuRepos.Update(x)) return "Update thành công";
             return "Update Không thành công";
+        }
+        private string MaTT()
+        {
+            if (_IChatLieuRepos.GetChatLieus().Count > 0)
+            {
+                return "CL" + Convert.ToString(_IChatLieuRepos.GetChatLieus().Max(c => Convert.ToInt32(c.Ma.Substring(2, c.Ma.Length - 2)) + 1));
+            }
+            else return "CL1";
         }
 
     }

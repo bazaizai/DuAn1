@@ -29,7 +29,7 @@ namespace _2.BUS.Services
             HinhThucMh Sp = new HinhThucMh()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTT(),
                 Ten = obj.Ten,
                 TrangThai = obj.TrangThai,
             };
@@ -71,6 +71,14 @@ namespace _2.BUS.Services
             x.TrangThai = obj.TrangThai;
             if (_IHinhThucMhRepos.Update(x)) return "Update thành công";
             return "Update Không thành công";
+        }
+        private string MaTT()
+        {
+            if (_IHinhThucMhRepos.GetHinhThucMhs().Count > 0)
+            {
+                return "HTMH" + Convert.ToString(_IHinhThucMhRepos.GetHinhThucMhs().Max(c => Convert.ToInt32(c.Ma.Substring(4, c.Ma.Length - 4)) + 1));
+            }
+            else return "HTMH1";
         }
     }
 }

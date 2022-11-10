@@ -29,13 +29,11 @@ namespace _2.BUS.Services
             Size Sp = new Size()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTT(),
                 Size1 = obj.Size1,
                 Cm = obj.Cm,
                 Inch = obj.Inch,
-                TrangThai = obj.TrangThai,
-
-
+                TrangThai = obj.TrangThai
             };
             if (_ISizeRepos.Add(Sp)) return "Thêm thành công";
             return "Thêm Không thành công";
@@ -80,6 +78,16 @@ namespace _2.BUS.Services
             if (_ISizeRepos.Update(x)) return "Update thành công";
             return "Update Không thành công";
         }
+
+        private string MaTT()
+        {
+            if (_ISizeRepos.GetSizes().Count > 0)
+            {
+                return "Size" + Convert.ToString(_ISizeRepos.GetSizes().Max(c => Convert.ToInt32(c.Ma.Substring(4, c.Ma.Length - 4)) + 1));
+            }
+            else return "Size1";
+        }
+
 
     }
 }

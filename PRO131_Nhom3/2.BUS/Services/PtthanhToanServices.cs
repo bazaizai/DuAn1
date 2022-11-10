@@ -29,7 +29,7 @@ namespace _2.BUS.Services
             PtthanhToan Sp = new PtthanhToan()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTT(),
                 Ten = obj.Ten,
                 TrangThai = obj.TrangThai,
             };
@@ -71,6 +71,14 @@ namespace _2.BUS.Services
             x.TrangThai = obj.TrangThai;
             if (_IPtthanhToanReposy.Update(x)) return "Update thành công";
             return "Update Không thành công";
+        }
+        private string MaTT()
+        {
+            if (_IPtthanhToanReposy.GetPtthanhToans().Count > 0)
+            {
+                return "PTTT" + Convert.ToString(_IPtthanhToanReposy.GetPtthanhToans().Max(c => Convert.ToInt32(c.Ma.Substring(4, c.Ma.Length - 4)) + 1));
+            }
+            else return "PTTT1";
         }
     }
 }
