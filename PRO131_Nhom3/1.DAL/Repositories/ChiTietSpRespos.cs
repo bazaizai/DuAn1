@@ -19,17 +19,31 @@ namespace _1.DAL.Repositories
         public bool Add(ChiTietSp Obj)
         {
             if (Obj == null) return false;
-            Context.ChiTietSps.Add(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.ChiTietSps.Add(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool Delete(ChiTietSp Obj)
         {
             if (Obj == null) return false;
-            Context.ChiTietSps.Remove(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.ChiTietSps.Remove(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public List<ChiTietSp> GetAll() => Context.ChiTietSps.ToList();
@@ -39,9 +53,16 @@ namespace _1.DAL.Repositories
         public bool Update(ChiTietSp Obj)
         {
             if (Obj == null) return false;
-            Context.ChiTietSps.Update(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.ChiTietSps.Update(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

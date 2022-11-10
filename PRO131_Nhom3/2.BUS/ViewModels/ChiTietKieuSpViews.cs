@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace _2.BUS.ViewModels
 {
-    public class ChiTietKieuSpView
+    public class ChiTietKieuSpViews
     {
-        public ChiTietKieuSpView()
+        public ChiTietKieuSpViews()
         {
 
         }
@@ -18,7 +18,7 @@ namespace _2.BUS.ViewModels
         public Guid? IdChiTietSp { get; set; }
         public int? TrangThai { get; set; }
 
-        public ChiTietKieuSpView(Guid id, Guid? idKieuSp, Guid? idCha, Guid? idChiTietSp, int? trangThai)
+        public ChiTietKieuSpViews(Guid id, Guid? idKieuSp, Guid? idCha, Guid? idChiTietSp, int? trangThai)
         {
             Id = id;
             IdKieuSp = idKieuSp;
@@ -26,7 +26,7 @@ namespace _2.BUS.ViewModels
             TrangThai = trangThai;
         }
 
-        public ChiTietKieuSpView(Guid? idKieuSp, Guid? idCha, Guid? idChiTietSp, int? trangThai)
+        public ChiTietKieuSpViews(Guid? idKieuSp, Guid? idCha, Guid? idChiTietSp, int? trangThai)
         {
             IdKieuSp = idKieuSp;
             IdChiTietSp = idChiTietSp;

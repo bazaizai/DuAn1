@@ -19,12 +19,12 @@ namespace _2.BUS.Services
             _IAnhRespo = new AnhRespos();
         }
 
-        public string Add(AnhView Obj) => Obj != null && _IAnhRespo.Add(new Anh(Obj.IdChiTietSp, Obj.TenAnh, Obj.DuongDan, Obj.TrangThai)) ? "Add succsess" : "Add not succsess";
+        public string Add(AnhViews Obj) => Obj != null && _IAnhRespo.Add(new Anh(Obj.IdChiTietSp, Obj.TenAnh, Obj.DuongDan, Obj.TrangThai)) ? "Add succsess" : "Add not succsess";
 
-        public string Delete(AnhView Obj) => Obj != null && _IAnhRespo.Delete(_IAnhRespo.GetAll().Find(x => x.Id == Obj.Id)) ? "Delete success" : "Delete not succsess";
+        public string Delete(AnhViews Obj) => Obj != null && _IAnhRespo.Delete(_IAnhRespo.GetAll().Find(x => x.Id == Obj.Id)) ? "Delete success" : "Delete not succsess";
 
-        public List<AnhView> GetAll() =>( from a in _IAnhRespo.GetAll()
-                                         select new AnhView()
+        public List<AnhViews> GetAll() =>( from a in _IAnhRespo.GetAll()
+                                         select new AnhViews()
                                          {
                                              Id = a.Id,
                                              TenAnh = a.TenAnh,
@@ -32,9 +32,9 @@ namespace _2.BUS.Services
                                              TrangThai = a.TrangThai
                                          }).ToList();
 
-        public AnhView GetByID(Guid ID) => GetAll().Find(x => x.Id == ID);
+        public AnhViews GetByID(Guid ID) => GetAll().Find(x => x.Id == ID);
 
-        public string Update(AnhView Obj)
+        public string Update(AnhViews Obj)
         {
             if (Obj == null) return "Updat not success";
             var x = _IAnhRespo.GetById(Obj.Id);

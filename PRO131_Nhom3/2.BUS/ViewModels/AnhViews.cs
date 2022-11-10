@@ -6,12 +6,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _1.DAL.DomainClass;
 
 namespace _2.BUS.ViewModels
 {
-    public class AnhView
+    public class AnhViews
     {
-        public AnhView()
+        public AnhViews()
         {
 
         }
@@ -21,7 +22,9 @@ namespace _2.BUS.ViewModels
         public byte[] DuongDan { get; set; }
         public int? TrangThai { get; set; }
 
-        public AnhView(Guid? idChiTietSp, string tenAnh, byte[] duongDan, int? trangThai)
+        ChiTietSp ChiTietSp { get; set; }
+
+        public AnhViews(Guid? idChiTietSp, string tenAnh, byte[] duongDan, int? trangThai)
         {
             IdChiTietSp = idChiTietSp;
             TenAnh = tenAnh;
@@ -29,7 +32,7 @@ namespace _2.BUS.ViewModels
             TrangThai = trangThai;
         }
 
-        public AnhView(Guid id, Guid? idChiTietSp, string tenAnh, byte[] duongDan, int? trangThai)
+        public AnhViews(Guid id, Guid? idChiTietSp, string tenAnh, byte[] duongDan, int? trangThai)
         {
             Id = id;
             IdChiTietSp = idChiTietSp;

@@ -20,17 +20,31 @@ namespace _1.DAL.Repositories
         public bool Add(Anh Obj)
         {
             if (Obj == null) return false;
-            Context.Anhs.Add(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.Anhs.Add(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool Delete(Anh Obj)
         {
             if (Obj == null) return false;
-            Context.Anhs.Remove(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.Anhs.Remove(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public List<Anh> GetAll() => Context.Anhs.ToList();
@@ -40,9 +54,16 @@ namespace _1.DAL.Repositories
         public bool Update(Anh Obj)
         {
             if (Obj == null) return false;
-            Context.Anhs.Add(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.Anhs.Add(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

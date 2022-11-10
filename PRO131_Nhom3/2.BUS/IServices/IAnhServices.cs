@@ -9,10 +9,10 @@ namespace _2.BUS.IServices
 {
     public interface IAnhServices
     {
-        string Add(AnhView Obj);
-        string Update(AnhView Obj);
-        string Delete(AnhView Obj);
-        AnhView GetByID(Guid ID);
-        List<AnhView> GetAll();
+        string Add(AnhViews Obj);
+        string Update(AnhViews Obj);
+        string Delete(AnhViews Obj);
+        AnhViews GetByID(Guid ID);
+        List<AnhViews> GetAll();
     }
 }

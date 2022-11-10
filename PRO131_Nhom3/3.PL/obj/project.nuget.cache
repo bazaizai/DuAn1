@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Z+1MK76HBVIuZlip+AdxSyxrBgZa/X1zbuS192Gni5hS7xofumMlCkh2oPK+YX4wgxwWraB0YAc1J1FGd0DZ0A==",
+  "dgSpecHash": "cNnuXZpscOUlRr/aP/2ARN+j9ELE4i0r58fzjNmxq86e5WtOhvDIsrjvnNt84RB6A9NsD+6AelF/LnU0nK0BrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

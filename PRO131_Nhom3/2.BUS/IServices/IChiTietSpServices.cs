@@ -9,10 +9,10 @@ namespace _2.BUS.IServices
 {
     public interface IChiTietSpServices
     {
-        string Add(ChiTietSpView Obj);
-        string Update(ChiTietKieuSpView Obj);
-        string Delete(ChiTietKieuSpView Obj);
-        ChiTietKieuSpView GetById(Guid Id);
-        List<ChiTietKieuSpView> GetAll();
+        string Add(ChiTietSpViews Obj);
+        string Update(ChiTietKieuSpViews Obj);
+        string Delete(ChiTietKieuSpViews Obj);
+        ChiTietKieuSpViews GetById(Guid Id);
+        List<ChiTietKieuSpViews> GetAll();
     }
 }

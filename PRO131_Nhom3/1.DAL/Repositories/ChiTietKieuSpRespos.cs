@@ -18,18 +18,32 @@ namespace _1.DAL.Repositories
         }
         public bool Add(ChiTietKieuSp Obj)
         {
-            if(Obj == null)return false;
-            Context.ChiTietKieuSps.Add(Obj);
-            Context.SaveChanges();
-            return true;
+            if (Obj == null) return false;
+            try
+            {
+                Context.ChiTietKieuSps.Add(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool Delete(ChiTietKieuSp Obj)
         {
             if (Obj == null) return false;
-            Context.ChiTietKieuSps.Remove(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.ChiTietKieuSps.Remove(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public List<ChiTietKieuSp> GetAll() => Context.ChiTietKieuSps.ToList();
@@ -39,9 +53,16 @@ namespace _1.DAL.Repositories
         public bool Update(ChiTietKieuSp Obj)
         {
             if (Obj == null) return false;
-            Context.ChiTietKieuSps.Update(Obj);
-            Context.SaveChanges();
-            return true;
+            try
+            {
+                Context.ChiTietKieuSps.Update(Obj);
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

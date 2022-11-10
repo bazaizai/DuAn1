@@ -1,2 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="CustomControlls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJCircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControlls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Views\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmQLBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmQLChiTietSp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

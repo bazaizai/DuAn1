@@ -19,15 +19,12 @@ namespace _2.BUS.Services
         {
             _IChiTietSpRespo = new ChiTietKieuSpRespos();
         }
-        public string Add(ChiTietKieuSpView Obj) => Obj != null && _IChiTietSpRespo.Add(new ChiTietKieuSp(Obj.IdKieuSp, Obj.IdChiTietSp, Obj.TrangThai)) ? "Add success" : "Add not success";
+        public string Add(ChiTietKieuSpViews Obj) => Obj != null && _IChiTietSpRespo.Add(new ChiTietKieuSp(Obj.IdKieuSp, Obj.IdChiTietSp, Obj.TrangThai)) ? "Add success" : "Add not success";
 
-        public string Delete(ChiTietKieuSpView Obj)
-        {
-            throw new NotImplementedException();
-        }
+        public string Delete(ChiTietKieuSpViews Obj)=>Obj != null && _IChiTietSpRespo.Delete(_IChiTietSpRespo.GetAll().Find(x => x.Id == Obj.Id)) ? "Delete success" : "Delete not succsess";
 
-        public List<ChiTietKieuSpView> GetAll() => (from a in _IChiTietSpRespo.GetAll()
-                                                   select new ChiTietKieuSpView()
+        public List<ChiTietKieuSpViews> GetAll() => (from a in _IChiTietSpRespo.GetAll()
+                                                   select new ChiTietKieuSpViews()
                                                    {
                                                        Id = a.Id,
                                                        IdChiTietSp = a.IdChiTietSp,
@@ -35,8 +32,8 @@ namespace _2.BUS.Services
                                                        TrangThai = a.TrangThai
                                                    }).ToList();
 
-        public ChiTietKieuSpView GetById(Guid Id) => GetAll().Find(x=>x.Id == Id);
-        public string Update(ChiTietKieuSpView Obj)
+        public ChiTietKieuSpViews GetById(Guid Id) => GetAll().Find(x=>x.Id == Id);
+        public string Update(ChiTietKieuSpViews Obj)
         {
             if (Obj == null) return "Update not success";
             var x = _IChiTietSpRespo.GetById(Obj.Id);
