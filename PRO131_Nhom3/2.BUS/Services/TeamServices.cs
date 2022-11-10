@@ -77,5 +77,10 @@ namespace _2.BUS.Services
             if (_teamRepos.Update(x)) return "Sửa thành công";
             return "Không thành công";
         }
+
+        public Guid GetIdByName(string name)
+        {
+            return GetAll().FirstOrDefault(x=>x.Ten == name).Id;
+        }
     }
 }

@@ -52,6 +52,12 @@ namespace _2.BUS.Services
                           }).OrderBy(c => c.Ma).ToList();
             return lstGiaidau;
         }
+
+        public Guid GetIdByName(string name)
+        {
+            return GetAll().FirstOrDefault(x => x.Ten == name).Id;
+        }
+
         public string MaTS()
         {
             if (_giaiDauRepos.GetAll().Count == 0) return "GD1";
