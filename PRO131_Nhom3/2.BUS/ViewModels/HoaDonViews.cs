@@ -28,7 +28,6 @@ namespace _2.BUS.ViewModels
         public string TenPttt { get; set; }
         public Guid? IdHt { get; set; }
         public string MaHt { get; set; }
-        [StringLength(50)]
         public string TenHt { get; set; }
         public string MaHD { get; set; }
         public DateTime? NgayTao { get; set; }

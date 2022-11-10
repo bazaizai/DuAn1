@@ -9,10 +9,10 @@ namespace _2.BUS.IServices
 {
     public interface IHoaDonServices
     {
-        string Add(HoaDonView obj);
-        string Update(HoaDonView obj);
-        string Delete(HoaDonView obj);
-        HoaDonView GetID(Guid id);
-        List<HoaDonView> GetAll();
+        string Add(HoaDonViews obj);
+        string Update(HoaDonViews obj);
+        string Delete(HoaDonViews obj);
+        HoaDonViews GetID(Guid id);
+        List<HoaDonViews> GetAll();
     }
 }

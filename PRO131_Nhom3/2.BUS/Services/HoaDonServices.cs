@@ -18,27 +18,27 @@ namespace _2.BUS.Services
             hoaDonRepos = new HoaDonRepos();
         }
 
-        public string Add(HoaDonView obj)
+        public string Add(HoaDonViews obj)
         {
             throw new NotImplementedException();
         }
 
-        public string Delete(HoaDonView obj)
+        public string Delete(HoaDonViews obj)
         {
             throw new NotImplementedException();
         }
 
-        public List<HoaDonView> GetAll()
+        public List<HoaDonViews> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public HoaDonView GetID(Guid id)
+        public HoaDonViews GetID(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public string Update(HoaDonView obj)
+        public string Update(HoaDonViews obj)
         {
             throw new NotImplementedException();
         }
