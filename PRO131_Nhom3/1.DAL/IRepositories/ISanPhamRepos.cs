@@ -11,7 +11,6 @@ namespace _1.DAL.IRepositories
     {
         bool Add(SanPham obj);
         bool Update(SanPham obj);
-
         bool Delete(SanPham obj);
         SanPham GetById(Guid id);
         List<SanPham> GetSanPhams();
