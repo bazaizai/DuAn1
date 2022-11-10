@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BesZlsjQ3vwd3TvqWwejM+gzkN5gm+aPjyElz3MgTt98rEwWYoP8qI5qS713enDOwwPgJ40ZsOrtCvSAgcCSZQ==",
+  "dgSpecHash": "6FTcGVN7cqHv9bbPnInbTrhRjd70370lUq0thP+7mBX6daDNgbaC08gZjiiqWEAYDFujEviRRv0O9jCWiBjZ/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taikh\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
     "C:\\Users\\taikh\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\taikh\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\taikh\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
