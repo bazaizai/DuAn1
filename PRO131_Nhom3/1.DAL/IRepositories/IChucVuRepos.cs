@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.IRepositories
 {
-    public interface IChưcVuRepos
+    public interface IChucVuRepos
     {
         bool Add(ChucVu obj);
         bool Update(ChucVu obj);

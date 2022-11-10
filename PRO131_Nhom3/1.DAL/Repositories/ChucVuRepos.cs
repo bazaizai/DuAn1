@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class ChucVuRepos : IChưcVuRepos
+    public class ChucVuRepos : IChucVuRepos
     {
         FpolyDBContext Context = new FpolyDBContext();
         public ChucVuRepos()

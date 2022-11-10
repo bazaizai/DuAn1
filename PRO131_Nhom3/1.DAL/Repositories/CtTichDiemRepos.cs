@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class UdTichDiemRepos : IUdTichDiemRepos
+    public class CtTichDiemRepos : ICtTichDiemRepos
     {
         FpolyDBContext Context = new FpolyDBContext();
-        public UdTichDiemRepos()
+        public CtTichDiemRepos()
         {
 
         }
 
-        public bool Add(UdtichDiem obj)
+        public bool Add(CttichDiem obj)
         {
             try
             {
-                Context.UdtichDiems.Add(obj);
+                Context.CttichDiems.Add(obj);
                 Context.SaveChanges();
                 return true;
             }
@@ -31,12 +31,12 @@ namespace _1.DAL.Repositories
             }
         }
 
-        public bool Delete(UdtichDiem obj)
+        public bool Delete(CttichDiem obj)
         {
             try
             {
-                var temp = Context.UdtichDiems.FirstOrDefault(x => x.Id == obj.Id);
-                Context.UdtichDiems.Remove(temp);
+                var temp = Context.CttichDiems.FirstOrDefault(x => x.Id == obj.Id);
+                Context.CttichDiems.Remove(temp);
                 Context.SaveChanges();
                 return true;
             }
@@ -46,27 +46,26 @@ namespace _1.DAL.Repositories
             }
         }
 
-        public UdtichDiem GetById(Guid id)
+        public CttichDiem GetById(Guid id)
         {
             if (id == Guid.Empty) return null;
-            return Context.UdtichDiems.FirstOrDefault(s => s.Id == id);
+            return Context.CttichDiems.FirstOrDefault(s => s.Id == id);
         }
 
-        public List<UdtichDiem> GetUuDais()
+        public List<CttichDiem> GetUuDais()
         {
-            return Context.UdtichDiems.ToList();
+            return Context.CttichDiems.ToList();
         }
 
-        public bool Update(UdtichDiem obj)
+        public bool Update(CttichDiem obj)
         {
             try
             {
-                var temp = Context.UdtichDiems.FirstOrDefault(x => x.Id == obj.Id);
-                temp.Ma = obj.Ma;
-                temp.LoaiHinhKm = obj.LoaiHinhKm;
-                temp.MucUuDai = obj.MucUuDai;
+                var temp = Context.CttichDiems.FirstOrDefault(x => x.Id == obj.Id);
+                temp.IdHoaDon = obj.IdHoaDon;
+                temp.HeSoTich = obj.HeSoTich;
                 temp.TrangThai = obj.TrangThai;
-                Context.UdtichDiems.Update(temp);
+                Context.CttichDiems.Update(temp);
                 Context.SaveChanges();
                 return true;
             }
