@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _2.BUS.ViewModels
 {
-    public class HoaDonView
+    public class HoaDonViews
     {
         public Guid Id { get; set; }
         public Guid? IdKh { get; set; }

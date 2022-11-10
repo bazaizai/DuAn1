@@ -1,42 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\phuon\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\phuon\\.nuget\\packages",
+      "C:\\Users\\Asus\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Asus\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
-=======
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\anhtr\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\anhtr\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-    ]
-  }
->>>>>>> DAnh
-=======
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ADMIN\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-    ]
-  }
->>>>>>> Hoang
-=======
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\taikh\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\taikh\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-    ]
-  }
->>>>>>> Kien
 }

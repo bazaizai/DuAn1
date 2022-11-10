@@ -260,13 +260,16 @@
             // 
             // dtp_start
             // 
+            this.dtp_start.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtp_start.Location = new System.Drawing.Point(177, 118);
             this.dtp_start.Name = "dtp_start";
             this.dtp_start.Size = new System.Drawing.Size(216, 23);
             this.dtp_start.TabIndex = 69;
+            this.dtp_start.Value = new System.DateTime(2022, 11, 10, 0, 0, 0, 0);
             // 
             // dtp_end
             // 
+            this.dtp_end.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtp_end.Location = new System.Drawing.Point(177, 154);
             this.dtp_end.Name = "dtp_end";
             this.dtp_end.Size = new System.Drawing.Size(216, 23);
