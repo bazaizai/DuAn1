@@ -15,10 +15,12 @@ namespace _2.BUS.Services
     {
         private ITeamRepos _teamRepos;
         private List<TeamView> _lstteamViews;
+        private IGiaiDauRepos giaiDauRepos;
         public TeamServices()
         {
             _teamRepos = new TeamRepos();
             _lstteamViews = new List<TeamView>();
+            giaiDauRepos = new GiaiDauRepos();
         }
         public string Add(TeamView team)
         {
@@ -37,7 +39,7 @@ namespace _2.BUS.Services
         public string MaTS()
         {
             if (_teamRepos.GetAll().Count == 0) return "Team1";
-            return "Team" + _teamRepos.GetAll().Max(x => Convert.ToInt32(x.Ma.Substring(4, x.Ma.Length - 4))) + 1;
+            return "Team" + (_teamRepos.GetAll().Max(x => Convert.ToInt32(x.Ma.Substring(4, x.Ma.Length - 4))) + 1);
 
         }
         public string Delete(Guid id)
@@ -50,6 +52,8 @@ namespace _2.BUS.Services
         public List<TeamView> GetAll()
         {
             _lstteamViews = (from a in _teamRepos.GetAll()
+                             join b in giaiDauRepos.GetAll()
+                             on a.IdGd equals b.Id
                              select new TeamView
                              {
                                  Id = a.Id,
@@ -57,7 +61,7 @@ namespace _2.BUS.Services
                                  Ma = a.Ma,
                                  Ten = a.Ten,
                                  TrangThai = a.TrangThai,
-
+                                 TenGiaiDau = b.Ten,
                              }).OrderBy(c=>c.Ma).ToList();
             return _lstteamViews;
         }

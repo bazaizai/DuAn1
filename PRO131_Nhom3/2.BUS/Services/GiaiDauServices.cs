@@ -55,7 +55,7 @@ namespace _2.BUS.Services
         public string MaTS()
         {
             if (_giaiDauRepos.GetAll().Count == 0) return "GD1";
-            return "GD" + _giaiDauRepos.GetAll().Max(x => Convert.ToInt32(x.Ma.Substring(2, x.Ma.Length - 2)) )+1;
+            return "GD" + (_giaiDauRepos.GetAll().Max(x => Convert.ToInt32(x.Ma.Substring(2, x.Ma.Length - 2)) )+1);
             
         }
         public string Update(GiaiDauView giaiDau)
