@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.IRepositories
 {
-    public interface IKieuSpRepo
+    public interface IKieuSpRepos
     {
-        KieuSp Add(KieuSp obj);
-        KieuSp Update();
+        bool Add(KieuSp obj);
+        bool Update(KieuSp obj);
         KieuSp GetID(Guid id);
+        List<KieuSp> GetAll();
     }
 }
