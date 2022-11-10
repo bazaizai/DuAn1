@@ -9,10 +9,17 @@ namespace _2.BUS.IServices
 {
     public interface IKieuSpServices
     {
+<<<<<<< HEAD
         string Add(KieuSpViews Obj);
         string Update(KieuSpViews Obj);
         string Delete(KieuSpViews Obj);
         KieuSpViews GetById(Guid Id);
+=======
+        string Add(KieuSpViews obj);
+        string Update(KieuSpViews obj);
+        string Delete(KieuSpViews obj);
+        KieuSpViews GetID(Guid id);
+>>>>>>> Hieu
         List<KieuSpViews> GetAll();
     }
 }

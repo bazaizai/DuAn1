@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using _3.PL.Views;
 =======
 using _3.PL.VIews;
@@ -11,6 +12,9 @@ using _3.PL.Views;
 =======
 using _3.PL.Views;
 >>>>>>> Kien
+=======
+using _3.PL.Views;
+>>>>>>> Hieu
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +37,7 @@ namespace _3.PL
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Application.Run(new FrmSale());
 =======
             Application.Run(new FrmChucVu());
@@ -44,6 +49,9 @@ namespace _3.PL
 =======
             Application.Run(new FrmKhachHang());
 >>>>>>> Kien
+=======
+            Application.Run(new FrmKieuSanPham());
+>>>>>>> Hieu
         }
     }
 }
