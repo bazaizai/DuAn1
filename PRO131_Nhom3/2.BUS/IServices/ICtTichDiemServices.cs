@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace _2.BUS.IServices
 {
-    public interface IChucVuServices
+    public interface ICtTichDiemServices
     {
-        string Add(ChucVuView obj);
-        string Update(ChucVuView obj);
-        string Delete(ChucVuView obj);
-        List<ChucVuView> GetChucVus();
+        string Add(CtTinhDiemView obj);
+        string Update(CtTinhDiemView obj);
+        string Delete(CtTinhDiemView obj);
+        List<CtTinhDiemView> GetUuDais();
     }
 }

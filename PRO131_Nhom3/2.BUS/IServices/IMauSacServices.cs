@@ -9,9 +9,9 @@ namespace _2.BUS.IServices
 {
     public interface IMauSacServices
     {
-        bool Add(MauSacView obj);
-        bool Update(MauSacView obj);
-        bool Delete(MauSacView obj);
+        string Add(MauSacView obj);
+        string Update(MauSacView obj);
+        string Delete(MauSacView obj);
         List<MauSacView> GetMauSacs();
     }
 }

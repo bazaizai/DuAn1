@@ -18,22 +18,30 @@ namespace _2.BUS.Services
         {
             _iMauSacRepos = new MauSacRepos();
         }
-        public bool Add(MauSacView obj)
+        public string MaTS()
         {
-            var ms = new MauSac()
+            if (_iMauSacRepos.GetMauSacs().Count == 0) return "MS1";
+            return "MS" + (_iMauSacRepos.GetMauSacs().Max(x => Convert.ToInt32(x.Ma.Substring(2, x.Ma.Length - 2))) + 1);
+
+        }
+        public string Add(MauSacView obj)
+        {
+            if (obj == null) return "thêm thất bại";
+            MauSac ms = new MauSac()
             {
                 Id = obj.Id,
-                Ma = obj.Ma,
+                Ma = MaTS(),
                 Ten = obj.Ten,
                 TrangThai = obj.TrangThai
             };
             _iMauSacRepos.Add(ms);
-            return true;
+            return "thêm thành công";
         }
 
-        public bool Delete(MauSacView obj)
+        public string Delete(MauSacView obj)
         {
-            var ms = new MauSac()
+            if (obj == null) return "xóa thất bại";
+            MauSac ms = new MauSac()
             {
                 Id = obj.Id,
                 Ma = obj.Ma,
@@ -41,7 +49,7 @@ namespace _2.BUS.Services
                 TrangThai = obj.TrangThai
             };
             _iMauSacRepos.Delete(ms);
-            return true;
+            return "xóa thành công";
         }
 
         public List<MauSacView> GetMauSacs()
@@ -59,9 +67,10 @@ namespace _2.BUS.Services
             return _lstMauSac;
         }
 
-        public bool Update(MauSacView obj)
+        public string Update(MauSacView obj)
         {
-            var ms = new MauSac()
+            if (obj == null) return "sửa thất bại";
+            MauSac ms = new MauSac()
             {
                 Id = obj.Id,
                 Ma = obj.Ma,
@@ -69,7 +78,7 @@ namespace _2.BUS.Services
                 TrangThai = obj.TrangThai
             };
             _iMauSacRepos.Update(ms);
-            return true;
+            return "sửa thành công";
         }
     }
 }

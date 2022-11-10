@@ -11,14 +11,15 @@ namespace _1.DAL.Repositories
 {
     public class MauSacRepos : IMauSacRepos
     {
-        FpolyDBContext Context = new FpolyDBContext();
+        FpolyDBContext Context;
         public MauSacRepos()
         {
-
+            Context = new FpolyDBContext();
         }
 
         public bool Add(MauSac obj)
         {
+            if (obj == null) return false;
             try
             {
                 Context.MauSacs.Add(obj);
@@ -33,6 +34,7 @@ namespace _1.DAL.Repositories
 
         public bool Delete(MauSac obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.MauSacs.FirstOrDefault(x => x.Id == obj.Id);
@@ -59,6 +61,7 @@ namespace _1.DAL.Repositories
 
         public bool Update(MauSac obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.MauSacs.FirstOrDefault(x => x.Id == obj.Id);

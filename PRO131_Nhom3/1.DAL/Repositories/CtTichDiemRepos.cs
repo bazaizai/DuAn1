@@ -11,14 +11,15 @@ namespace _1.DAL.Repositories
 {
     public class CtTichDiemRepos : ICtTichDiemRepos
     {
-        FpolyDBContext Context = new FpolyDBContext();
+        FpolyDBContext Context;
         public CtTichDiemRepos()
         {
-
+            Context = new FpolyDBContext();
         }
 
         public bool Add(CttichDiem obj)
         {
+            if (obj == null) return false;
             try
             {
                 Context.CttichDiems.Add(obj);
@@ -33,6 +34,7 @@ namespace _1.DAL.Repositories
 
         public bool Delete(CttichDiem obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.CttichDiems.FirstOrDefault(x => x.Id == obj.Id);
@@ -59,6 +61,7 @@ namespace _1.DAL.Repositories
 
         public bool Update(CttichDiem obj)
         {
+            if (obj == null) return false;
             try
             {
                 var temp = Context.CttichDiems.FirstOrDefault(x => x.Id == obj.Id);
