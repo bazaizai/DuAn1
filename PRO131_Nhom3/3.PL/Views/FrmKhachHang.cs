@@ -44,8 +44,12 @@ namespace _3.PL.Views
 
 
             dtg_show.Rows.Clear();
-            var lstKhachHang = _iKhachHangServices.GetAll();
-            foreach (var item in lstKhachHang)
+            var lst = _iKhachHangServices.GetAll();
+            if (tb_timkiem.Text != "")
+            {
+                lst = lst.Where(x => x.Ma.ToLower().Contains(tb_timkiem.Text.ToLower()) || x.Sdt.ToLower().Contains(tb_timkiem.Text.ToLower())).ToList();
+            }
+            foreach (var item in lst)
             {
                 dtg_show.Rows.Add(item.Id, stt++, item.Ma, item.Ten, item.TenDem, item.Ho, item.NgaySinh.ToString(), item.Sdt, item.DiaChi, item.Email, item.TrangThai == 1 ? "Hoạt động" : "Không hoạt động");
             }
@@ -128,6 +132,19 @@ namespace _3.PL.Views
                 rdb_hd.Checked = _khachHangView.TrangThai == 1;
                 rdb_khd.Checked = _khachHangView.TrangThai == 0;
             }
+        }
+
+        //public void TimKiem()
+        //{
+        //    var lst = _iKhachHangServices.GetAll();
+        //    if (tb_timkiem.Text != "")
+        //    {
+        //        lst = lst.Where(x => x.Ma.ToLower().Contains(tb_timkiem.Text.ToLower()) || x.Sdt.ToLower().Contains(tb_timkiem.Text.ToLower())).ToList();
+        //    }
+        //}
+        private void tb_timkiem_TextChanged(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

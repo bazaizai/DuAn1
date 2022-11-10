@@ -279,6 +279,7 @@
             this.tb_timkiem.Name = "tb_timkiem";
             this.tb_timkiem.Size = new System.Drawing.Size(671, 37);
             this.tb_timkiem.TabIndex = 19;
+            this.tb_timkiem.TextChanged += new System.EventHandler(this.tb_timkiem_TextChanged);
             // 
             // dtg_show
             // 
