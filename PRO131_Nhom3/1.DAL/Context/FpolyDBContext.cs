@@ -50,6 +50,7 @@ namespace _1.DAL.Context
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 optionsBuilder.UseSqlServer("Data Source = MSI\\SQLEXPRESS01; Initial Catalog = PRO131; Persist Security Info = True; User ID = Chang1402; Password = 123456");
                 
 
@@ -60,6 +61,10 @@ namespace _1.DAL.Context
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-VBVUUD9\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=hoangdhph25845;Password=1");
 >>>>>>> Hoang
 
+=======
+                optionsBuilder.UseSqlServer("Data Source=NUGETRENKI\\SQLEXPRESS;Initial Catalog=PRO131;Persist Security Info=True;User ID=nugetrenki;Password=112233");
+                
+>>>>>>> Kien
             }
 
         }

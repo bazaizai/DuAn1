@@ -14,10 +14,12 @@ namespace _2.BUS.Services
     public class KhachHangServices : IKhachHangServices
     {
         IKhachHangRepos _iKhachHangRepos;
+        ITichDiemRepos _iTichDiemRepos;
 
         public KhachHangServices()
         {
             _iKhachHangRepos = new KhachHangRepos();
+            _iTichDiemRepos = new TichDiemRepos();
         }
         public string Add(KhachHangView obj)
         {
@@ -39,9 +41,9 @@ namespace _2.BUS.Services
                 if (_iKhachHangRepos.Add(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
 
         }
@@ -57,10 +59,10 @@ namespace _2.BUS.Services
                 if (_iKhachHangRepos.Delete(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
 
 
@@ -68,7 +70,8 @@ namespace _2.BUS.Services
 
         public List<KhachHangView> GetAll()
         {
-            var lst = (from a in _iKhachHangRepos.GetKhachHangs()
+            var lst = (from a in _iKhachHangRepos.GetAll()
+                       join b in _iTichDiemRepos.GetAll() on a.IdtichDiem equals b.Id
                        select new KhachHangView()
                        {
                            Id = a.Id,
@@ -80,6 +83,7 @@ namespace _2.BUS.Services
                            Sdt = a.Sdt,
                            DiaChi = a.DiaChi,
                            Email = a.Email,
+                           SoDiem = b.SoDiem,
                            TrangThai = a.TrangThai
                        }).OrderBy(c => c.Ma).ToList();
             return lst;
@@ -106,7 +110,7 @@ namespace _2.BUS.Services
 
         public List<KhachHangView> Search(string obj)
         {
-            var lst = (from a in _iKhachHangRepos.GetKhachHangs()
+            var lst = (from a in _iKhachHangRepos.GetAll()
                        select new KhachHangView()
                        {
                            Id = a.Id,
@@ -132,13 +136,20 @@ namespace _2.BUS.Services
                     Id = obj.Id,
                     Ma = obj.Ma,
                     Ten = obj.Ten,
+                    TenDem = obj.TenDem,
+                    Ho = obj.Ho,
+                    NgaySinh = obj.NgaySinh,
+                    Sdt = obj.Sdt,
+                    DiaChi = obj.DiaChi,
+                    Email = obj.Email,
+                    TrangThai = obj.TrangThai
                 };
                 if (_iKhachHangRepos.Update(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
     }

@@ -14,10 +14,17 @@ namespace _1.DAL.Repositories
         private FpolyDBContext context;
         private List<LstichDiem> _lstLichSuTichDiem;
 
+        public LichSuTichDiemRepos()
+        {
+            context = new FpolyDBContext();
+            _lstLichSuTichDiem = new List<LstichDiem>();
+        }
+
         public bool Add(LstichDiem obj)
         {
             try
             {
+                if (obj == null) return false;
                 context.LstichDiems.Add(obj);
                 context.SaveChanges();
                 return true;
@@ -32,6 +39,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.LstichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 context.Remove(tempobj);
                 context.SaveChanges();
@@ -49,7 +57,7 @@ namespace _1.DAL.Repositories
             return context.LstichDiems.FirstOrDefault(c => c.Id == id);
         }
 
-        public List<LstichDiem> GetLstichDiems()
+        public List<LstichDiem> GetAll()
         {
             _lstLichSuTichDiem = context.LstichDiems.ToList();
             return _lstLichSuTichDiem;
@@ -59,6 +67,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.LstichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.HeSoTich = obj.HeSoTich;
                 tempobj.TrangThai = obj.TrangThai;

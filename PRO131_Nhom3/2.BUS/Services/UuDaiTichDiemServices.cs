@@ -33,9 +33,9 @@ namespace _2.BUS.Services
                 if (_iUuDaiTichDiemRepos.Add(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
@@ -50,16 +50,16 @@ namespace _2.BUS.Services
                 if (_iUuDaiTichDiemRepos.Delete(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
         public List<UuDaiTichDiemView> GetAll()
         {
-            var lst = (from a in _iUuDaiTichDiemRepos.GetUdtichDiems()
+            var lst = (from a in _iUuDaiTichDiemRepos.GetAll()
                        select new UuDaiTichDiemView()
                        {
                            Id = a.Id,
@@ -105,9 +105,9 @@ namespace _2.BUS.Services
                 if (_iUuDaiTichDiemRepos.Update(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
     }

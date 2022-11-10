@@ -14,9 +14,15 @@ namespace _2.BUS.Services
     public class LichSuTichDiemServices:ILichSuTichDiemServices
     {
         ILichSuTichDiemRepos _iLichSuTichDiemRepos;
+        ITichDiemRepos _iTichDiemRepos;
+        ICtTichDiemRepos _iCtTichDiemRepos;
+        IHoaDonRepos _iHoaDonRepos;
         public LichSuTichDiemServices()
         {
             _iLichSuTichDiemRepos = new LichSuTichDiemRepos();
+            _iTichDiemRepos = new TichDiemRepos();
+            _iCtTichDiemRepos = new CtTichDiemRepos();
+            _iHoaDonRepos = new HoaDonRepos();
         }
         public string Add(LichSuTichDiemView obj)
         {
@@ -31,9 +37,9 @@ namespace _2.BUS.Services
                 if (_iLichSuTichDiemRepos.Add(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
@@ -48,20 +54,27 @@ namespace _2.BUS.Services
                 if (_iLichSuTichDiemRepos.Delete(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
         public List<LichSuTichDiemView> GetAll()
         {
-            var lst = (from a in _iLichSuTichDiemRepos.GetLstichDiems()
+            var lst = (from a in _iLichSuTichDiemRepos.GetAll()
+                       join b in _iTichDiemRepos.GetAll() on a.IdTichDiem equals b.Id
+                       //join c in (from a in _iCtTichDiemRepos.GetAll()
+                       //           join b in _iHoaDonRepos.GetAll() on a.IdHoaDon equals b.Id
+                       //           select new )
+                      
                        select new LichSuTichDiemView()
                        {
                            Id = a.Id,
                            HeSoTich = a.HeSoTich,
+                           SoDiemLS = b.SoDiem,
+                           SoDiemTD = b.SoDiem,
                            TrangThai = a.TrangThai
                        }).ToList();
             return lst;
@@ -104,9 +117,9 @@ namespace _2.BUS.Services
                 if (_iLichSuTichDiemRepos.Update(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
     }

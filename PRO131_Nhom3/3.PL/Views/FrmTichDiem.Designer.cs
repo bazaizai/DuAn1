@@ -80,13 +80,16 @@
             // 
             // dtg_show
             // 
+            this.dtg_show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtg_show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_show.Location = new System.Drawing.Point(6, 98);
             this.dtg_show.Name = "dtg_show";
             this.dtg_show.RowHeadersWidth = 62;
             this.dtg_show.RowTemplate.Height = 33;
+            this.dtg_show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg_show.Size = new System.Drawing.Size(1383, 228);
             this.dtg_show.TabIndex = 0;
+            this.dtg_show.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_show_CellClick);
             // 
             // groupBox3
             // 
@@ -110,6 +113,7 @@
             this.btn_clear.TabIndex = 3;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_xoa
             // 
@@ -119,6 +123,7 @@
             this.btn_xoa.TabIndex = 2;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -128,6 +133,7 @@
             this.btn_sua.TabIndex = 1;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -137,6 +143,7 @@
             this.btn_them.TabIndex = 0;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // groupBox1
             // 
