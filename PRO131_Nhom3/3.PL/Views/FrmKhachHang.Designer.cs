@@ -87,7 +87,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1072, 441);
+            this.groupBox1.Size = new System.Drawing.Size(1025, 441);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
@@ -282,13 +282,16 @@
             // 
             // dtg_show
             // 
+            this.dtg_show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtg_show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_show.Location = new System.Drawing.Point(6, 98);
             this.dtg_show.Name = "dtg_show";
             this.dtg_show.RowHeadersWidth = 62;
             this.dtg_show.RowTemplate.Height = 33;
+            this.dtg_show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg_show.Size = new System.Drawing.Size(1383, 228);
             this.dtg_show.TabIndex = 0;
+            this.dtg_show.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_show_CellClick);
             // 
             // groupBox3
             // 
@@ -297,9 +300,9 @@
             this.groupBox3.Controls.Add(this.btn_sua);
             this.groupBox3.Controls.Add(this.btn_them);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(1043, 12);
+            this.groupBox3.Location = new System.Drawing.Point(1057, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(387, 441);
+            this.groupBox3.Size = new System.Drawing.Size(373, 441);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức năng";
@@ -312,6 +315,7 @@
             this.btn_clear.TabIndex = 3;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_xoa
             // 
@@ -321,6 +325,7 @@
             this.btn_xoa.TabIndex = 2;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -330,6 +335,7 @@
             this.btn_sua.TabIndex = 1;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -339,6 +345,7 @@
             this.btn_them.TabIndex = 0;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // FrmKhachHang
             // 

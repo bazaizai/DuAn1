@@ -132,6 +132,13 @@ namespace _2.BUS.Services
                     Id = obj.Id,
                     Ma = obj.Ma,
                     Ten = obj.Ten,
+                    TenDem = obj.TenDem,
+                    Ho = obj.Ho,
+                    NgaySinh = obj.NgaySinh,
+                    Sdt = obj.Sdt,
+                    DiaChi = obj.DiaChi,
+                    Email = obj.Email,
+                    TrangThai = obj.TrangThai
                 };
                 if (_iKhachHangRepos.Update(x)) return "Thành Công";
                 return "Không Thành Công";
