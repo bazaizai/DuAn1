@@ -14,6 +14,12 @@ namespace _1.DAL.Repositories
         private FpolyDBContext context;
         private List<UdtichDiem> _lstUuDaiTichDiem;
 
+        public UuDaiTichDiemRepos()
+        {
+            context = new FpolyDBContext();
+            _lstUuDaiTichDiem = new List<UdtichDiem>();
+        }
+
         public bool Add(UdtichDiem obj)
         {
             try

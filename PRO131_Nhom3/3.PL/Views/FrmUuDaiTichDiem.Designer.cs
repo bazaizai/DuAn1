@@ -38,9 +38,9 @@
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbb_loaihinhkm = new System.Windows.Forms.ComboBox();
             this.rdb_khd = new System.Windows.Forms.RadioButton();
             this.rdb_hd = new System.Windows.Forms.RadioButton();
-            this.tb_loaihinhkm = new System.Windows.Forms.TextBox();
             this.tb_mucUudai = new System.Windows.Forms.TextBox();
             this.tb_ma = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -84,13 +84,16 @@
             // 
             // dtg_show
             // 
+            this.dtg_show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtg_show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_show.Location = new System.Drawing.Point(6, 98);
             this.dtg_show.Name = "dtg_show";
             this.dtg_show.RowHeadersWidth = 62;
             this.dtg_show.RowTemplate.Height = 33;
+            this.dtg_show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg_show.Size = new System.Drawing.Size(1383, 228);
             this.dtg_show.TabIndex = 0;
+            this.dtg_show.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_show_CellClick);
             // 
             // groupBox3
             // 
@@ -114,6 +117,7 @@
             this.btn_clear.TabIndex = 3;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_xoa
             // 
@@ -123,6 +127,7 @@
             this.btn_xoa.TabIndex = 2;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -132,6 +137,7 @@
             this.btn_sua.TabIndex = 1;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -141,12 +147,13 @@
             this.btn_them.TabIndex = 0;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbb_loaihinhkm);
             this.groupBox1.Controls.Add(this.rdb_khd);
             this.groupBox1.Controls.Add(this.rdb_hd);
-            this.groupBox1.Controls.Add(this.tb_loaihinhkm);
             this.groupBox1.Controls.Add(this.tb_mucUudai);
             this.groupBox1.Controls.Add(this.tb_ma);
             this.groupBox1.Controls.Add(this.label7);
@@ -160,6 +167,17 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // cbb_loaihinhkm
+            // 
+            this.cbb_loaihinhkm.FormattingEnabled = true;
+            this.cbb_loaihinhkm.Items.AddRange(new object[] {
+            "Siêu khuyến mãi",
+            "Khuyến mãi siêu khủng khiếp"});
+            this.cbb_loaihinhkm.Location = new System.Drawing.Point(358, 166);
+            this.cbb_loaihinhkm.Name = "cbb_loaihinhkm";
+            this.cbb_loaihinhkm.Size = new System.Drawing.Size(413, 38);
+            this.cbb_loaihinhkm.TabIndex = 19;
             // 
             // rdb_khd
             // 
@@ -183,16 +201,9 @@
             this.rdb_hd.Text = "Hoạt động";
             this.rdb_hd.UseVisualStyleBackColor = true;
             // 
-            // tb_loaihinhkm
-            // 
-            this.tb_loaihinhkm.Location = new System.Drawing.Point(358, 167);
-            this.tb_loaihinhkm.Name = "tb_loaihinhkm";
-            this.tb_loaihinhkm.Size = new System.Drawing.Size(413, 37);
-            this.tb_loaihinhkm.TabIndex = 11;
-            // 
             // tb_mucUudai
             // 
-            this.tb_mucUudai.Location = new System.Drawing.Point(358, 242);
+            this.tb_mucUudai.Location = new System.Drawing.Point(358, 241);
             this.tb_mucUudai.Name = "tb_mucUudai";
             this.tb_mucUudai.Size = new System.Drawing.Size(413, 37);
             this.tb_mucUudai.TabIndex = 10;
@@ -274,12 +285,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdb_khd;
         private System.Windows.Forms.RadioButton rdb_hd;
-        private System.Windows.Forms.TextBox tb_loaihinhkm;
         private System.Windows.Forms.TextBox tb_mucUudai;
         private System.Windows.Forms.TextBox tb_ma;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbb_loaihinhkm;
     }
 }
