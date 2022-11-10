@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Xr8Mr6lfUWv+zEFsWp6UT1IIb/YzYEWESU2E++v/V4W+zCSMUQhgoe2mLk7b8WZx9rbv77LBf74xEnwKQ38ubw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
@@ -100,5 +101,11 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "U7MUXEvzWRY3QEknEFKIwV2EKj6D2lP9QvpWwgc5bEo6VeTG1KLZmETEatQJ/PSzW2mwcq3iR+tWlNQ5Jjtx5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> TAnh
   "logs": []
 }
