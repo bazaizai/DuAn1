@@ -22,6 +22,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 _dbContext.Teams.Add(obj);
                 _dbContext.SaveChanges();
                 return true;
@@ -36,6 +37,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = _dbContext.Teams.FirstOrDefault(c => c.Id == obj.Id);
                 _dbContext.Remove(tempobj);
                 _dbContext.SaveChanges();
@@ -62,6 +64,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = _dbContext.Teams.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.IdGd = obj.IdGd;
                 tempobj.Ma = obj.Ma;

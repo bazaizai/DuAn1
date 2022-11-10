@@ -20,6 +20,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 _dbContext.GiaiDaus.Add(obj);
                 _dbContext.SaveChanges();
                 return true;
@@ -34,6 +35,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = _dbContext.GiaiDaus.FirstOrDefault(c => c.Id == obj.Id);
                 _dbContext.Remove(tempobj);
                 _dbContext.SaveChanges();
@@ -58,8 +60,10 @@ namespace _1.DAL.Repositories
 
         public bool Update(GiaiDau obj)
         {
+
             try
             {
+                if (obj == null) return false;
                 var tempobj = _dbContext.GiaiDaus.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.Ma = obj.Ma;
                 tempobj.Ten = obj.Ten;
