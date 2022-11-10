@@ -52,7 +52,7 @@ namespace _1.DAL.Repositories
             return Context.CttichDiems.FirstOrDefault(s => s.Id == id);
         }
 
-        public List<CttichDiem> GetUuDais()
+        public List<CttichDiem> GetAll()
         {
             return Context.CttichDiems.ToList();
         }

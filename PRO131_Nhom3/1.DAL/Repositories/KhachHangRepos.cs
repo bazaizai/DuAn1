@@ -22,6 +22,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 context.KhachHangs.Add(obj);
                 context.SaveChanges();
                 return true;
@@ -36,6 +37,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.KhachHangs.FirstOrDefault(c => c.Id == obj.Id);
                 context.Remove(tempobj);
                 context.SaveChanges();
@@ -53,7 +55,7 @@ namespace _1.DAL.Repositories
             return context.KhachHangs.FirstOrDefault(c => c.Id == id);
         }
 
-        public List<KhachHang> GetKhachHangs()
+        public List<KhachHang> GetAll()
         {
                 _lstKhachHang = context.KhachHangs.ToList();
                 return _lstKhachHang;
@@ -64,6 +66,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.KhachHangs.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.Ma = obj.Ma;
                 tempobj.Ten = obj.Ten;

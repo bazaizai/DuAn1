@@ -13,6 +13,6 @@ namespace _1.DAL.IRepositories
         bool Update(UdtichDiem obj);
         bool Delete(UdtichDiem obj);
         UdtichDiem GetById(Guid id);
-        List<UdtichDiem> GetUdtichDiems();
+        List<UdtichDiem> GetAll();
     }
 }

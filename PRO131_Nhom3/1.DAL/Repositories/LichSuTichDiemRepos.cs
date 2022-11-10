@@ -24,6 +24,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 context.LstichDiems.Add(obj);
                 context.SaveChanges();
                 return true;
@@ -38,6 +39,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.LstichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 context.Remove(tempobj);
                 context.SaveChanges();
@@ -55,7 +57,7 @@ namespace _1.DAL.Repositories
             return context.LstichDiems.FirstOrDefault(c => c.Id == id);
         }
 
-        public List<LstichDiem> GetLstichDiems()
+        public List<LstichDiem> GetAll()
         {
             _lstLichSuTichDiem = context.LstichDiems.ToList();
             return _lstLichSuTichDiem;
@@ -65,6 +67,7 @@ namespace _1.DAL.Repositories
         {
             try
             {
+                if (obj == null) return false;
                 var tempobj = context.LstichDiems.FirstOrDefault(c => c.Id == obj.Id);
                 tempobj.HeSoTich = obj.HeSoTich;
                 tempobj.TrangThai = obj.TrangThai;

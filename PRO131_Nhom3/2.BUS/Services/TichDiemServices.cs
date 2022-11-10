@@ -14,9 +14,11 @@ namespace _2.BUS.Services
     public class TichDiemServices : ITichDiemServices
     {
         ITichDiemRepos _iTichDiemRepos;
+        IHoaDonRepos _iHoaDonRepos;
         public TichDiemServices()
         {
             _iTichDiemRepos = new TichDiemRepos();
+            _iHoaDonRepos = new HoaDonRepos();
         }
         public string Add(TichDiemView obj)
         {
@@ -31,9 +33,9 @@ namespace _2.BUS.Services
                 if (_iTichDiemRepos.Add(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
@@ -48,16 +50,16 @@ namespace _2.BUS.Services
                 if (_iTichDiemRepos.Delete(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
 
         public List<TichDiemView> GetAll()
         {
-            var lst = (from a in _iTichDiemRepos.GetTichDiems()
+            var lst = (from a in _iTichDiemRepos.GetAll()                      
                        select new TichDiemView()
                        {
                            Id = a.Id,
@@ -97,9 +99,9 @@ namespace _2.BUS.Services
                 if (_iTichDiemRepos.Update(x)) return "Thành Công";
                 return "Không Thành Công";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return "Không Thành Công";
+                return e.Message.ToString();
             }
         }
     }
