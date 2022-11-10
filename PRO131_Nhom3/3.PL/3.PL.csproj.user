@@ -2,9 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Update="Views\FrmChiTietSale.cs">
-=======
     <Compile Update="CustomControlls\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -29,8 +26,10 @@
     <Compile Update="CustomControlls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Views\FrmChiTietSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\FrmChucVu.cs">
->>>>>>> Develop
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmGiaiDau.cs">
