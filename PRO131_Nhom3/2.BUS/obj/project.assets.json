@@ -5958,6 +5958,7 @@
   "packageFolders": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Asus\\.nuget\\packages\\": {},
 =======
     "C:\\Users\\phuon\\.nuget\\packages\\": {},
@@ -5965,11 +5966,15 @@
 =======
     "C:\\Users\\anhtr\\.nuget\\packages\\": {},
 >>>>>>> DAnh
+=======
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+>>>>>>> Hoang
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
@@ -5991,11 +5996,19 @@
       "packagesPath": "C:\\Users\\anhtr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
 >>>>>>> DAnh
+=======
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+      "projectName": "2.BUS",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+>>>>>>> Hoang
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6005,6 +6018,9 @@
 =======
         "C:\\Users\\anhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> DAnh
+=======
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Hoang
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6021,6 +6037,7 @@
           "projectReferences": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
               "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
 =======
@@ -6031,6 +6048,10 @@
             "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
               "projectPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
 >>>>>>> DAnh
+=======
+            "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+>>>>>>> Hoang
             }
           }
         }
@@ -6061,19 +6082,15 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> Chang
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> Hoang
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

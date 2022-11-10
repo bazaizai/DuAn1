@@ -2,6 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+<<<<<<< HEAD
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -1744,10 +1745,24 @@
         "runtime": {
           "bin/placeholder/2.BUS.dll": {}
         }
+=======
+      "FontAwesome.Sharp/6.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+>>>>>>> Hoang
       }
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -5966,10 +5981,30 @@
       "type": "project",
       "path": "../2.BUS/2.BUS.csproj",
       "msbuildProject": "../2.BUS/2.BUS.csproj"
+=======
+    "FontAwesome.Sharp/6.1.1": {
+      "sha512": "p6dnSMcKQg790vGSJgvFk6S8gXQnEcCugfaJ21WFxZz9h+9KyxL+sX6kbGv8p4iVoX/e5BAMnTV4QJFJvx8QxQ==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.1.1.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net40/FontAwesome.Sharp.dll",
+        "lib/net45/FontAwesome.Sharp.dll",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net5.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+>>>>>>> Hoang
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+<<<<<<< HEAD
       "2.BUS >= 1.0.0"
     ]
   },
@@ -5983,11 +6018,19 @@
 =======
     "C:\\Users\\anhtr\\.nuget\\packages\\": {},
 >>>>>>> DAnh
+=======
+      "FontAwesome.Sharp >= 6.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+>>>>>>> Hoang
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
@@ -6009,11 +6052,19 @@
       "packagesPath": "C:\\Users\\anhtr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\anhtr\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
 >>>>>>> DAnh
+=======
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+      "projectName": "3.PL",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+>>>>>>> Hoang
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6023,6 +6074,9 @@
 =======
         "C:\\Users\\anhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> DAnh
+=======
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Hoang
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6057,6 +6111,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -6077,19 +6137,15 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> Chang
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> Hoang
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

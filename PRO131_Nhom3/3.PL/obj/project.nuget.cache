@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "HVnkToFgE8nOYphyHcB1fh3gZiRbNUQGYHsjARSBZO7voH8WGvbhhDI7c9ksEJGW3snRSp3YxLJzXcxPIBl/Vw==",
   "success": true,
 <<<<<<< HEAD
@@ -218,4 +219,13 @@
   ],
   "logs": []
 >>>>>>> DAnh
+=======
+  "dgSpecHash": "cNnuXZpscOUlRr/aP/2ARN+j9ELE4i0r58fzjNmxq86e5WtOhvDIsrjvnNt84RB6A9NsD+6AelF/LnU0nK0BrQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512"
+  ],
+  "logs": []
+>>>>>>> Hoang
 }
