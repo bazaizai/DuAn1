@@ -125,7 +125,7 @@ namespace _3.PL.Views
                 {
                     MessageBox.Show("Ngày kết thúc sale không được bé hơn ngày bắt đầu");
                 }    
-                else if(ValidateInput.CheckIntInput(tb_mucgiam.Text)==false && Convert.ToInt32(tb_mucgiam.Text)>0)
+                else if(ValidateInput.CheckIntInput(tb_mucgiam.Text)==false || Convert.ToInt32(tb_mucgiam.Text)<0)
                 {
                     MessageBox.Show("Nhập đúng mức giảm");
                 }    

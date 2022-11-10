@@ -90,3 +90,4 @@ C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\3.PL\obj\Debug\net5.0-windows
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\3.PL\obj\Debug\net5.0-windows\3.PL.csproj.CopyComplete
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\3.PL\obj\Debug\net5.0-windows\_3.PL.Views.FrmTeam.resources
 C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\3.PL\obj\Debug\net5.0-windows\_3.PL.Views.FrmSale.resources
+C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\3.PL\obj\Debug\net5.0-windows\_3.PL.Views.FrmChiTietSale.resources
