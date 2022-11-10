@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 is_global = true
 build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
@@ -10,40 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _2.BUS
-build_property.ProjectDir = C:\Users\phuon\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\
-=======
-is_global = true
-build_property.TargetFramework = net5.0
-build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = 
-build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = _2.BUS
-build_property.ProjectDir = C:\Users\anhtr\OneDrive\Desktop\DuAn1\PRO131_Nhom3\2.BUS\
->>>>>>> DAnh
-=======
-is_global = true
-build_property.TargetFramework = net5.0
-build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = 
-build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = _2.BUS
-build_property.ProjectDir = C:\Users\ADMIN\Desktop\DuAn1\PRO131_Nhom3\2.BUS\
->>>>>>> Hoang
-=======
-is_global = true
-build_property.TargetFramework = net5.0
-build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = 
-build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = _2.BUS
-build_property.ProjectDir = C:\Users\taikh\Desktop\DuAn1\PRO131_Nhom3\2.BUS\
->>>>>>> Kien
+build_property.ProjectDir = C:\Users\Asus\Desktop\DuAn1\PRO131_Nhom3\2.BUS\
