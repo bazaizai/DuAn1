@@ -1,5 +1,6 @@
 ﻿using _1.DAL.Context;
 using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-    public class SizeRepos
+    public class SizeRepos:ISizeRepos
     {
         public FpolyDBContext _dbContext;
         public SizeRepos()
@@ -76,6 +77,13 @@ namespace _1.DAL.Repositories
         public List<Size> GetSizes()
         {
             return _dbContext.Sizes.ToList();
+        }
+
+        public Size GetById(Guid id)
+        {
+            if (id == Guid.Empty) return null;
+            return _dbContext.Sizes.FirstOrDefault(c => c.Id == id);
+
         }
     }
 }

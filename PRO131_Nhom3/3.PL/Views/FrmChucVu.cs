@@ -22,6 +22,8 @@ namespace _3.PL.Views
             InitializeComponent();
             _iChucVu = new ChucVuServices();
             LoadData();
+            rdb_hoatdong.Checked = true;
+            tbt_ma.Enabled = false;
         }
 
         public void LoadData()

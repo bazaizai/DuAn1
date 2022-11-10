@@ -13,5 +13,6 @@ namespace _1.DAL.IRepositories
         bool Update(KieuSp Obj);
         bool Delete(KieuSp Obj);
         KieuSp GetById(Guid Id);
+        List<KieuSp> GetAll();
     }
 }

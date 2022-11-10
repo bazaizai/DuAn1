@@ -1,5 +1,6 @@
 ﻿using _1.DAL.Context;
 using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1.DAL.Repositories
 {
-     public class ChatLieuRepos
+     public class ChatLieuRepos:IChatLieuRepos
      {
         public FpolyDBContext _dbContext;
         public ChatLieuRepos()
@@ -73,6 +74,12 @@ namespace _1.DAL.Repositories
         public List<ChatLieu> GetChatLieus()
         {
             return _dbContext.ChatLieus.ToList();
+        }
+
+        public ChatLieu GetById(Guid id)
+        {
+            if (id == Guid.Empty) return null;
+            return _dbContext.ChatLieus.FirstOrDefault(c => c.Id == id);
         }
     }
 }

@@ -63,19 +63,26 @@ namespace _2.BUS.Services
 
         public List<LichSuTichDiemView> GetAll()
         {
-            var lst = (from a in _iLichSuTichDiemRepos.GetAll()
-                       join b in _iTichDiemRepos.GetAll() on a.IdTichDiem equals b.Id
-                       //join c in (from a in _iCtTichDiemRepos.GetAll()
-                       //           join b in _iHoaDonRepos.GetAll() on a.IdHoaDon equals b.Id
-                       //           select new )
-                      
+            var lst = (from lstd in _iLichSuTichDiemRepos.GetAll()
+                       join td in _iTichDiemRepos.GetAll() on lstd.IdTichDiem equals td.Id
+                       join c in (from cttd in _iCtTichDiemRepos.GetAll()
+                                  join hd in _iHoaDonRepos.GetAll() on cttd.IdHoaDon equals hd.Id
+                                  select new CtTinhDiemView()
+                                  {
+                                      Id = cttd.Id,
+                                      IdHoaDon = cttd.IdHoaDon,
+                                      MaHD = hd.Ma,
+                                      TrangThai = cttd.TrangThai,
+                                      HeSoTich = cttd.HeSoTich,
+                                      TongTienSauKhiGiam = hd.TongTienSauKhiGiam
+                                  }).ToList() on lstd.IdCttinhDiem equals c.Id
                        select new LichSuTichDiemView()
                        {
-                           Id = a.Id,
-                           HeSoTich = a.HeSoTich,
-                           SoDiemLS = b.SoDiem,
-                           SoDiemTD = b.SoDiem,
-                           TrangThai = a.TrangThai
+                           Id = lstd.Id,
+                           HeSoTich = lstd.HeSoTich,
+                           SoDiemLS = lstd.HeSoTich,
+                           SoDiemTD = td.SoDiem,
+                           TrangThai = lstd.TrangThai
                        }).ToList();
             return lst;
         }

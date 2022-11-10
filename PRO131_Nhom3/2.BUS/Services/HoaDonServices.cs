@@ -13,9 +13,15 @@ namespace _2.BUS.Services
     public class HoaDonServices : IHoaDonServices
     {
         IHoaDonRepos hoaDonRepos;
+        IKhachHangRepos khachHangRepos;
+        INhanVienRepos nhanVienRepos;
+        ITichDiemRepos tichDiemRepos;
         public HoaDonServices()
         {
             hoaDonRepos = new HoaDonRepos();
+            khachHangRepos = new KhachHangRepos();
+            nhanVienRepos = new NhanVienRepos();
+            tichDiemRepos = new TichDiemRepos();
         }
 
         public string Add(HoaDonViews obj)
@@ -30,6 +36,23 @@ namespace _2.BUS.Services
 
         public List<HoaDonViews> GetAll()
         {
+            //var lst = (from a in hoaDonRepos.GetAll()
+            //           join b in (from a in khachHangRepos.GetKhachHangs()
+            //                      join b in tichDiemRepos.GetTichDiems() on a.IdtichDiem equals b.Id
+            //                      select new KhachHangView()
+            //                      {
+            //                          Id = a.Id,
+            //                          Ten = a.Ten,
+            //                          Ho = a.Ho,
+            //                          TenDem = a.TenDem,
+            //                          Sdt = a.Sdt,
+            //                          DiaChi = a.DiaChi,
+            //                          IdtichDiem = a.IdtichDiem,
+            //                          Email = a.Email,
+            //                          Ma = a.Ma,
+            //                      }
+            //                      )
+            //           );
             throw new NotImplementedException();
         }
 

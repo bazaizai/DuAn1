@@ -10,9 +10,9 @@ namespace _2.BUS.IServices
 {
     public interface IChucVuServices
     {
-        bool Add(ChucVuView obj);
-        bool Update(ChucVuView obj);
-        bool Delete(ChucVuView obj);
+        string Add(ChucVuView obj);
+        string Update(ChucVuView obj);
+        string Delete(ChucVuView obj);
         List<ChucVuView> GetChucVus();
     }
 }

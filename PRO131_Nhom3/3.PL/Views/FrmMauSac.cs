@@ -21,7 +21,10 @@ namespace _3.PL.Views
         public FrmMauSac()
         {
             InitializeComponent();
+            _iMauSac = new MauSacServices();
             LoadData();
+            rdb_hoatdong.Checked = true;
+            tbt_ma.Enabled = false;
         }
         public void LoadData()
         {
@@ -32,20 +35,12 @@ namespace _3.PL.Views
             dtg_show.Columns[2].Name = "Tên";
             dtg_show.Columns[3].Name = "Trạng thái";
             dtg_show.Columns[0].Visible = false;
-            var lstChucVu = _iMauSac.GetMauSacs();
-            foreach (var item in lstChucVu)
+            var lstMauSac = _iMauSac.GetMauSacs();
+            foreach (var item in lstMauSac)
             {
                 dtg_show.Rows.Add(item.Id, item.Ma, item.Ten, item.TrangThai == 1 ? "Hoạt động" : "Không hoạt động");
             }
         }
-        //private string MaTS()
-        //{
-        //    if (_iMauSac.GetMauSacs().Count > 0)
-        //    {
-        //        return "CV" + Convert.ToString(_iMauSac.GetMauSacs().Max(c => Convert.ToInt32(c.Ma.Substring(2, c.Ma.Length - 2)) + 1));
-        //    }
-        //    else return "CV1";
-        //}
 
         public MauSacView GetData()
         {
