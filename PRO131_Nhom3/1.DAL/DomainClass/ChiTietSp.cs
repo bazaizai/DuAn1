@@ -66,5 +66,21 @@ namespace _1.DAL.DomainClass
         public virtual ICollection<ChiTietSale> ChiTietSales { get; set; }
         [InverseProperty(nameof(HoaDonChiTiet.IdChiTietSpNavigation))]
         public virtual ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; }
+
+        public ChiTietSp(Guid? idSp, Guid? idMauSac, Guid? idSize, Guid? idTeam, Guid? idChatLieu, string baoHanh, string moTa, int? soLuongTon, decimal? giaNhap, decimal? giaBan, int? trangThaiKhuyenMai, int? trangThai)
+        {
+            IdSp = idSp;
+            IdMauSac = idMauSac;
+            IdSize = idSize;
+            IdTeam = idTeam;
+            IdChatLieu = idChatLieu;
+            BaoHanh = baoHanh;
+            MoTa = moTa;
+            SoLuongTon = soLuongTon;
+            GiaNhap = giaNhap;
+            GiaBan = giaBan;
+            TrangThaiKhuyenMai = trangThaiKhuyenMai;
+            TrangThai = trangThai;
+        }
     }
 }
