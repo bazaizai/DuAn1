@@ -1,28 +1,225 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {
+    "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
-        "projectName": "3.PL",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+        "projectUniqueName": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "projectName": "1.DAL",
+        "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
+=======
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "projectName": "1.DAL",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\obj\\",
+>>>>>>> Develop
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+          "C:\\Users\\phuon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Develop
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows"
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "projectName": "2.BUS",
+        "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "projectName": "2.BUS",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\obj\\",
+>>>>>>> Develop
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\phuon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Develop
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+<<<<<<< HEAD
+              "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+                "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+=======
+              "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj": {
+                "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\1.DAL\\1.DAL.csproj"
+>>>>>>> Develop
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "projectName": "3.PL",
+        "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "packagesPath": "C:\\Users\\phuon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "projectName": "3.PL",
+        "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\3.PL.csproj",
+        "packagesPath": "C:\\Users\\taikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\3.PL\\obj\\",
+>>>>>>> Develop
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\phuon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\taikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Develop
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,7 +228,16 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+<<<<<<< HEAD
+              "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+                "projectPath": "C:\\Users\\phuon\\OneDrive\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
+=======
+              "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj": {
+                "projectPath": "C:\\Users\\taikh\\Desktop\\DuAn1\\PRO131_Nhom3\\2.BUS\\2.BUS.csproj"
+>>>>>>> Develop
+              }
+            }
           }
         },
         "warningProperties": {
@@ -43,14 +249,19 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,7 +273,11 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+>>>>>>> Develop
         }
       }
     }

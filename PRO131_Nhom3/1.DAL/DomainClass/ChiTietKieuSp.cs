@@ -36,5 +36,12 @@ namespace _1.DAL.DomainClass
         public virtual KieuSp IdKieuSpNavigation { get; set; }
         [InverseProperty(nameof(ChiTietKieuSp.IdChaNavigation))]
         public virtual ICollection<ChiTietKieuSp> InverseIdChaNavigation { get; set; }
+
+        public ChiTietKieuSp(Guid? idKieuSp, Guid? idChiTietSp, int? trangThai)
+        {
+            IdKieuSp = idKieuSp;
+            IdChiTietSp = idChiTietSp;
+            TrangThai = trangThai;
+        }
     }
 }
