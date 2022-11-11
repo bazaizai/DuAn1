@@ -76,7 +76,7 @@ namespace _3.PL.Views
         }
         private void bt_update_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có muốn xóa ?", "Cảnh báo", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Bạn có muốn sửa ?", "Cảnh báo", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 if (idSale == Guid.Empty)
@@ -104,7 +104,7 @@ namespace _3.PL.Views
             }
             else
             {
-                MessageBox.Show("Bạn đã hủy xóa");
+                MessageBox.Show("Bạn đã hủy sửa");
             }
         }
 
